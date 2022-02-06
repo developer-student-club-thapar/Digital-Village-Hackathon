@@ -1,0 +1,46 @@
+.landing{
+    height: 100vh;
+    background: url('./assets/bg.png');
+}
+.landing h1{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 85.4152px;
+    line-height: 128px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: transparent;
+}
+.landing h1:nth-child(1){
+    padding-top: 22vh;
+    margin-bottom: 0;
+}
+.landing h1:nth-child(2){
+    margin-top: 0;
+}
+.landing h3{
+    font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 34.6321px;
+line-height: 52px;
+/* identical to box height */
+background-color: transparent;
+
+text-align: center;padding-bottom: 10vh;
+color: #FFFFFF;
+}
+.landing button {
+    background: #50BEBB;
+    border-radius: 16px;
+    outline: none;
+    border: none;
+    padding: 1% 5%;
+    color: #FFFFFF;
+    transition: all 0.3s ease-in-out;
+    margin: 0 0.5%;
+}
+.landing button:hover{
+    background-color: #4da8a5;
+}
