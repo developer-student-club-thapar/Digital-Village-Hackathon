@@ -58,7 +58,6 @@ export function FooterContainer() {
             className="footer-column"
             style={{
               position: "relative",
-
               right: "-400px",
               top: "-200px",
             }}
