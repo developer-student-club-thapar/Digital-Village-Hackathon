@@ -1,13 +1,12 @@
-*{
-    background-color: #438276;
-    margin: 0;
-    padding: 0;
-}
-
 .guidelines-container {
+    background-color: black;
     padding: 0;
     margin: 0;
     position: relative;
+    padding-top: 2vh;
+    padding-bottom: 50vh;
+    width: 100%;
+    min-height: 100vh;
 }
 
 .guidelines-heading {
@@ -25,49 +24,42 @@
     font-family: 'Poppins', sans-serif;
     color: white;
     padding-left: 15vh;
-    width: 55%;
+    width: 80%;
     overflow: visible;
     font-size: 1.7rem;
 }
 
-.guidelines-img img{
+.guidelines-container img {
     position: absolute;
-    float: right;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    left: 70%;
-    width: 30%;
+    top: -70px;
+    right: 8%;
 }
 
 @media only screen and (max-width: 1025px){
-    .guidelines-img img {
-        width: 33%;
-    }
     .guidelines-heading {
         padding-top: 6vh;
-        padding-left: 4vh;
+        padding-left: 5vh;
         font-size: 2.5rem;
         padding-bottom: 3vh;
     }
     .points {
-        width: 55%;
+        width: 90%;
         padding-left: 7vh;
         font-size: 1.2rem;
     }
 }
 
 @media only screen and (max-width: 700px){
-    .guidelines-img img {
+    .guidelines-container img {
         visibility: hidden;
     }
     .guidelines-heading {
-        padding-left: 4vh;
-        margin-bottom: -2vh;
+        padding-left: 6vh;
+        margin-bottom: -1vh;
         font-size: 2.5rem;
     }
     .points {
-        width: 75%;
+        width: 90%;
         padding-left: 7vh;
         font-size: 1.2rem;
     }
