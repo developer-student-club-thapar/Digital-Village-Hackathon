@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import grid from "./grid.svg";
 import svg from "./leaves.png";
-import arrow from "./right-arrows.png";
+import arrow from "./arrow.svg";
 import selectedStatements from "./statements.js";
 import styled from "@emotion/styled";
 
@@ -14,6 +14,7 @@ const CardWrapper = styled.div`
   flex-grow: 1;
   border-radius: 1rem;
   border: 3px solid #08bd04;
+  cursor: pointer;
 `;
 
 const CardContentWrapper = styled.div`
@@ -63,16 +64,19 @@ const StatementsWrapper = styled.div`
 
 const DetailedView = styled.div`
   padding: 1rem 4rem 2rem 4rem;
+  margin: 3rem;
+  border-radius: 1rem;
+  border: 3px solid #08bd04;
 `;
 
 const DetailedHeading = styled.h3`
-  color: white;
+  color: #08bd04;
   font-size: 1.5rem;
   padding: 1rem 0;
 `;
 
 const DetailedSubHeadings = styled.h5`
-  color: white;
+  color: #08bd04;
   font-size: 1.3rem;
 `;
 
@@ -80,9 +84,15 @@ const DetailedSubText = styled.p`
   color: white;
 `;
 
+const DetailedNav = styled.div`
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+`;
+
 const BackButton = styled.img`
-  height: 30px;
-  color: #fff;
+  height: 25px;
+  cursor: pointer;
 `;
 
 function StatementCard() {
@@ -121,10 +131,17 @@ function StatementCard() {
   } else {
     return (
       <DetailedView>
-        <div>
-          <BackButton src={arrow} alt="" />
-          <DetailedHeading>{selectedStatement.title}</DetailedHeading>
-        </div>
+        <DetailedNav>
+          <BackButton
+            src={arrow}
+            alt="arrow_left"
+            onClick={() => {
+              setShowDetailedView(!showDetailedView);
+            }}
+          />
+          <DetailedHeading>{`Statement Number ${selectedStatement.id}`}</DetailedHeading>
+        </DetailedNav>
+        <DetailedHeading>{selectedStatement.title}</DetailedHeading>
         <div>
           <DetailedSubHeadings>Description:- </DetailedSubHeadings>
           <DetailedSubText>{selectedStatement.content.des}</DetailedSubText>
