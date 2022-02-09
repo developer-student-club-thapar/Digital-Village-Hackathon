@@ -1,7 +1,8 @@
 import './App.css'
 import About from './Components/about/About'
-import Guidelines from './Components/Guidelines'
+import Guidelines from './Components/Guidelines/Guidelines'
 import Landing from './Components/Landing/Landing'
+import Speakers from './Components/Speakers/Speakers'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       <Landing/>
       <About/>
       <Guidelines/>
+      <Speakers/>
     </div> 
   )
 }

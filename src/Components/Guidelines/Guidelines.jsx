@@ -1,11 +1,12 @@
 import React from 'react';
-import "./CSS/Guidelines.css"
-import guide from "./Static/guide-crop.png"
+import "./Guidelines.css"
+import guide from "./Static/guide-vector.png"
 
 export default function Guidelines() {
   return <div className='guidelines'>
   <div className="guidelines-container">
     <h1 className='guidelines-heading'>Guidelines</h1>
+    <img src= {guide}/>
     <div className="points">
       <ul>
         <li>
@@ -35,9 +36,6 @@ export default function Guidelines() {
         </li>
       </ul>
     </div>
-    <div className="guidelines-img">
-        <img src= {guide}/>
-      </div>
-    </div>
-  </div>;
+  </div>
+</div>;
 }
