@@ -1,17 +1,17 @@
-import './App.css'
-import About from './Components/about/About'
-import Guidelines from './Components/Guidelines'
-import Landing from './Components/Landing/Landing'
+// import About from "./Components/about/About";
+// import Guidelines from "./Components/Guidelines";
+// import Landing from "./Components/Landing/Landing";
+import ProblemStatements from "./Components/ProblemStatements/ProblemStatements";
 
 function App() {
-
   return (
     <div className="App">
-      <Landing/>
+      {/* <Landing/>
       <About/>
-      <Guidelines/>
-    </div> 
-  )
+      <Guidelines/> */}
+      <ProblemStatements />
+    </div>
+  );
 }
 
-export default App
+export default App;
