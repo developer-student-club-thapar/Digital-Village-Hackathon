@@ -1,6 +1,5 @@
 import React from "react";
-import grid from "./grid.svg";
-
+import grid from "./assets/grid.svg";
 import StatementCard from "./StatementCard.jsx";
 import styled from "@emotion/styled";
 
