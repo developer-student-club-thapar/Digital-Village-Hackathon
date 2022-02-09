@@ -1,0 +1,16 @@
+.nav-bar{
+    display: flex;
+    background-color:rgba(40, 42, 49, 0.9);
+    padding: 1.4%;
+}
+.nav-bar span{
+    color: #ffffff !important;
+    margin: auto;
+    text-transform: uppercase;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+}
