@@ -1,6 +1,6 @@
 import React from "react";
 import grid from "./grid.svg";
-import problemStatements from "./statements.js";
+
 import StatementCard from "./StatementCard.jsx";
 import styled from "@emotion/styled";
 
@@ -31,7 +31,7 @@ const HeadingNav = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 1.2rem 1rem 1rem 1rem;
   margin-bottom: 2.5rem;
 `;
 
@@ -42,22 +42,13 @@ const HeadingTitle = styled.h1`
   text-transform: uppercase;
   color: #08bd04;
   text-shadow: 4px 4px #000;
+  line-height: 1.2;
   @media (max-width: 1200px) {
     font-size: 3rem;
   }
   @media (max-width: 950px) {
     font-size: 2rem;
   }
-`;
-
-const StatementsWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  row-gap: 3rem;
-  column-gap: 4%;
-  margin: 2rem 4rem;
-  justify-content: space-around;
 `;
 
 function ProblemStatements() {
@@ -68,11 +59,7 @@ function ProblemStatements() {
           <StyledImg src={grid} alt="" />
           <HeadingTitle>Problem Statement</HeadingTitle>
         </HeadingNav>
-        <StatementsWrapper>
-          {problemStatements.map((statement, index) => (
-            <StatementCard key={index} statement={statement} />
-          ))}
-        </StatementsWrapper>
+        <StatementCard />
       </Wrapper>
     </>
   );

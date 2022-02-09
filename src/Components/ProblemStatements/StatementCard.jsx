@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import grid from "./grid.svg";
 import svg from "./leaves.png";
+import arrow from "./right-arrows.png";
+import selectedStatements from "./statements.js";
 import styled from "@emotion/styled";
 
 const CardWrapper = styled.div`
@@ -49,26 +51,105 @@ const StyledImg = styled.img`
   height: 35px;
 `;
 
-function StatementCard({ statement }) {
-  return (
-    <CardWrapper>
-      <StyledImg src={grid} alt="" />
-      <CardContentWrapper>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "centers",
-          }}
-        >
-          <StyledSvg src={svg} alt="" />
+const StatementsWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 3rem;
+  column-gap: 4%;
+  margin: 2rem 4rem;
+  justify-content: space-around;
+`;
+
+const DetailedView = styled.div`
+  padding: 1rem 4rem 2rem 4rem;
+`;
+
+const DetailedHeading = styled.h3`
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+`;
+
+const DetailedSubHeadings = styled.h5`
+  color: white;
+  font-size: 1.3rem;
+`;
+
+const DetailedSubText = styled.p`
+  color: white;
+`;
+
+const BackButton = styled.img`
+  height: 30px;
+  color: #fff;
+`;
+
+function StatementCard() {
+  const [selectedStatement, setSelectedStatement] = useState(null);
+  const [showDetailedView, setShowDetailedView] = useState(false);
+  if (!showDetailedView) {
+    return (
+      <StatementsWrapper>
+        {selectedStatements.map((statement, index) => (
+          <CardWrapper
+            key={index}
+            onClick={() => {
+              setSelectedStatement(statement);
+              setShowDetailedView(!showDetailedView);
+            }}
+          >
+            <StyledImg src={grid} alt="" />
+            <CardContentWrapper>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "centers",
+                }}
+              >
+                <StyledSvg src={svg} alt="" />
+              </div>
+              <TitleWrapper>
+                <Title>{statement.title}</Title>
+              </TitleWrapper>
+            </CardContentWrapper>
+          </CardWrapper>
+        ))}
+      </StatementsWrapper>
+    );
+  } else {
+    return (
+      <DetailedView>
+        <div>
+          <BackButton src={arrow} alt="" />
+          <DetailedHeading>{selectedStatement.title}</DetailedHeading>
         </div>
-        <TitleWrapper>
-          <Title>{statement.title}</Title>
-        </TitleWrapper>
-      </CardContentWrapper>
-    </CardWrapper>
-  );
+        <div>
+          <DetailedSubHeadings>Description:- </DetailedSubHeadings>
+          <DetailedSubText>{selectedStatement.content.des}</DetailedSubText>
+        </div>
+        <div>
+          <DetailedSubHeadings>Data:- </DetailedSubHeadings>
+          <DetailedSubText>{selectedStatement.content.data}</DetailedSubText>
+        </div>
+        <div>
+          <DetailedSubHeadings>Link:- </DetailedSubHeadings>
+          {/* <a
+                    herf={selectedStatement.content.link}
+                    target="_blank"
+                    rel="noreferrer"
+                  > */}
+          <DetailedSubText>{selectedStatement.content.link}</DetailedSubText>
+          {/* </a> */}
+        </div>
+        <div>
+          <DetailedSubHeadings>Evaluation:- </DetailedSubHeadings>
+          <DetailedSubText>{selectedStatement.content.eval}</DetailedSubText>
+        </div>
+      </DetailedView>
+    );
+  }
 }
 
 export default StatementCard;
