@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import grid from "./grid.svg";
-import svg from "./leaves.png";
-import arrow from "./arrow.svg";
-import selectedStatements from "./statements.js";
+import grid from "./assets/grid.svg";
+import svg from "./assets/leaves.png";
+import arrow from "./assets/arrow.svg";
+import selectedStatements from "./assets/statements.js";
 import styled from "@emotion/styled";
 
 const CardWrapper = styled.div`

@@ -1,79 +1,65 @@
-<<<<<<< HEAD:src/Components/CSS/Guidelines.css
-*{
-    margin: 0;
-    padding: 0;
-}
-
-=======
->>>>>>> pr/7:src/Components/Guidelines/Guidelines.css
 .guidelines-container {
-    background-color: black;
-    padding: 0;
-    margin: 0;
-    position: relative;
-    padding-top: 2vh;
-    padding-bottom: 50vh;
-    width: 100%;
-    min-height: 100vh;
+  background-color: black;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  padding-top: 2vh;
+  padding-bottom: 50vh;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .guidelines-heading {
-    text-align: left;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    padding: 12vh 5vh 5vh 10vh;
-    font-size: 4.7rem;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  padding: 12vh 5vh 5vh 10vh;
+  font-size: 4.7rem;
 }
 
-
 .points {
-    text-align: left;
-    float: left;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    padding-left: 15vh;
-    width: 80%;
-    overflow: visible;
-    font-size: 1.7rem;
+  text-align: left;
+  float: left;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  padding-left: 15vh;
+  width: 80%;
+  overflow: visible;
+  font-size: 1.7rem;
 }
 
 .guidelines-container img {
-    position: absolute;
-    top: -70px;
-    right: 8%;
+  position: absolute;
+  top: -70px;
+  right: 8%;
 }
 
-@media only screen and (max-width: 1025px){
-    .guidelines-heading {
-        padding-top: 6vh;
-        padding-left: 5vh;
-        font-size: 2.5rem;
-        padding-bottom: 3vh;
-    }
-    .points {
-        width: 90%;
-        padding-left: 7vh;
-        font-size: 1.2rem;
-    }
+@media only screen and (max-width: 1025px) {
+  .guidelines-heading {
+    padding-top: 6vh;
+    padding-left: 5vh;
+    font-size: 2.5rem;
+    padding-bottom: 3vh;
+  }
+  .points {
+    width: 90%;
+    padding-left: 7vh;
+    font-size: 1.2rem;
+  }
 }
 
-@media only screen and (max-width: 700px){
-    .guidelines-container img {
-        visibility: hidden;
-    }
-    .guidelines-heading {
-        padding-left: 6vh;
-        margin-bottom: -1vh;
-        font-size: 2.5rem;
-    }
-    .points {
-        width: 90%;
-        padding-left: 7vh;
-        font-size: 1.2rem;
-    }
+@media only screen and (max-width: 700px) {
+  .guidelines-container img {
+    visibility: hidden;
+  }
+  .guidelines-heading {
+    padding-left: 6vh;
+    margin-bottom: -1vh;
+    font-size: 2.5rem;
+  }
+  .points {
+    width: 90%;
+    padding-left: 7vh;
+    font-size: 1.2rem;
+  }
 }
-
-
-
-
-

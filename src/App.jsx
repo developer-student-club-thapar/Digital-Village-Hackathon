@@ -1,32 +1,19 @@
-<<<<<<< HEAD
 import About from "./Components/about/About";
-import Guidelines from "./Components/Guidelines";
+import Guidelines from "./Components/Guidelines/Guidelines.jsx";
 import Landing from "./Components/Landing/Landing";
-=======
-import './App.css'
-import About from './Components/about/About'
-import Guidelines from './Components/Guidelines/Guidelines'
-import Landing from './Components/Landing/Landing'
-import Speakers from './Components/Speakers/Speakers'
->>>>>>> 5397278ed8693a841f2fcb1b5e5fcdadd8f6ed41
+import Speakers from "./Components/Speakers/Speakers";
+import ProblemStatements from "./Components/ProblemStatements/ProblemStatements";
 
 function App() {
   return (
     <div className="App">
-<<<<<<< HEAD
       <Landing />
       <About />
       <Guidelines />
+      <Speakers />
+      <ProblemStatements />
     </div>
   );
-=======
-      <Landing/>
-      <About/>
-      <Guidelines/>
-      <Speakers/>
-    </div> 
-  )
->>>>>>> 5397278ed8693a841f2fcb1b5e5fcdadd8f6ed41
 }
 
 export default App;
