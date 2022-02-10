@@ -1,10 +1,8 @@
 import React from "react";
-// import Footer from "../components/footer";
-// import chet from "../components/logo.png";
 
-export function FooterContainer() {
+function Footer() {
   return (
-    <Footer>
+    <>
       <div
         className="container"
         style={{
@@ -31,29 +29,6 @@ export function FooterContainer() {
             gridGap: "20px",
           }}
         >
-          {/* <img
-            src={chet}
-            style={{
-              display: "flex",
-              justifyContent: "left",
-              position: "relative",
-              top: "-280px",
-              left: "-200px",
-              width: "700px",
-              height: "700px",
-            }}
-          /> */}
-          {/* <Footer.Column>
-            <Footer.Title className="Quick Links">Quick Links</Footer.Title>
-          </Footer.Column>
-          <Footer.Column>
-            <Footer.Link href="#">Home</Footer.Link>
-            <Footer.Link href="#">Guidelines</Footer.Link>
-            <Footer.Link href="#">Problem Statements</Footer.Link>
-            <Footer.Link href="#">Register</Footer.Link>
-            <Footer.Link href="#">Submit</Footer.Link>
-          </Footer.Column>
-          <Footer.Column></Footer.Column> */}
           <div
             className="footer-column"
             style={{
@@ -75,7 +50,7 @@ export function FooterContainer() {
             >
               Contact Us
             </div>
-            <icons
+            <div
               className="icons"
               style={{
                 color: "white",
@@ -86,30 +61,32 @@ export function FooterContainer() {
               }}
             >
               <i
-                class="fab fa-linkedin"
+                className="fab fa-linkedin"
                 style={{
                   fontSize: "26px",
                   cursor: "pointer",
                 }}
               ></i>
               <i
-                class="fab fa-instagram"
+                className="fab fa-instagram"
                 style={{
                   fontSize: "26px",
                   cursor: "pointer",
                 }}
               ></i>
               <i
-                class="fab fa-discord"
+                className="fab fa-discord"
                 style={{
                   fontSize: "26px",
                   cursor: "pointer",
                 }}
               ></i>
-            </icons>
+            </div>
           </div>
         </div>
       </div>
-    </Footer>
+    </>
   );
 }
+
+export default Footer;
