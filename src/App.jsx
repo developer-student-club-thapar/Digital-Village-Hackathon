@@ -5,6 +5,7 @@ import Speakers from "./Components/Speakers/Speakers";
 import ProblemStatements from "./Components/ProblemStatements/ProblemStatements";
 import Sponsor from "./components/sponsor/sponsor";
 import { FooterContainer } from "./components/Footer/Footer";
+import './App.css'
 
 function App() {
   return (

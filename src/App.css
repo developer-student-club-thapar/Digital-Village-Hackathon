@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  max-width: 99.9vw !important;
+  overflow-x: hidden !important;
 }
 
 .App-logo {
@@ -41,24 +43,29 @@ button {
   font-size: calc(10px + 2vmin);
 }
 body{
-  max-width: 100vw;
-  overflow-x: hidden;
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+  background-color: black;
 }
 .main-heading{
-  color: rgba(8, 189, 4, 1);
-  z-index: 10;
+  color: rgba(8, 189, 4, 1) !important;
+  z-index: 1;
   position: relative;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 77.95px;
+  line-height: 117px;
+  text-align: left;
 }
 .main-heading:after{
   content: attr(data-content);
   position: absolute;
-  top: 2px;
-  left: 2.4px;
-  z-index: 9;
+  top: 4.5px;
+  left: 5px;
+  z-index: -1;
+  color: transparent;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-fill-color: #fff;
   -webkit-text-stroke-color: #fff;
-}
-body{
-  background-color: black;
+  text-align: inherit;
 }

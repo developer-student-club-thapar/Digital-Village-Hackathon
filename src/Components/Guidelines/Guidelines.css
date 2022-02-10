@@ -4,7 +4,6 @@
   margin: 0;
   position: relative;
   padding-top: 2vh;
-  padding-bottom: 50vh;
   width: 100%;
   min-height: 100vh;
 }
@@ -13,10 +12,13 @@
   text-align: left;
   font-family: "Poppins", sans-serif;
   color: white;
-  padding: 12vh 5vh 5vh 10vh;
+  margin: 12vh 5vh 5vh 10vh;
   font-size: 4.7rem;
 }
-
+.guidelines{
+  max-width: 100vw;
+  position: relative;
+}
 .points {
   text-align: left;
   float: left;
@@ -25,7 +27,8 @@
   padding-left: 15vh;
   width: 80%;
   overflow: visible;
-  font-size: 1.7rem;
+  font-size: 1.25rem;
+  position: relative;
 }
 
 .guidelines-container img {
