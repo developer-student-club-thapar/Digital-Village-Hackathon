@@ -7,6 +7,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   background-color: #072227;
+  padding: 2rem 0;
 `;
 
 const StyledImg = styled.img`
