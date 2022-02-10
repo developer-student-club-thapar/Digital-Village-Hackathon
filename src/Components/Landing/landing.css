@@ -1,11 +1,16 @@
 .landing {
   height: 100vh;
-  background: url("./assets/bg.png");
+  background-image: url("./assets/bg.png"),
+    radial-gradient(circle, hsla(0, 0%, 78%, 0) 18%, hsla(0, 0%, 0%, 0.5) 100%);
+
+  /* background-image: url("./assets/bg.png"); */
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9FCCFA", endColorstr="#000000", GradientType=1 );
   text-align: center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .landing h1 {
   font-family: Poppins;
   font-style: normal;

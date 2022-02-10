@@ -3,8 +3,9 @@ import Guidelines from "./Components/Guidelines/Guidelines.jsx";
 import Landing from "./Components/Landing/Landing";
 import Speakers from "./Components/Speakers/Speakers";
 import ProblemStatements from "./Components/ProblemStatements/ProblemStatements";
-import Sponsors from "./Components/Sponsors/Sponsors";
+import SponsorsWrapperMain from "./Components/Sponsors/SponsorsWrapperMain";
 import Footer from "./Components/Footer/Footer";
+import "./App.css";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <About />
       <Guidelines />
       <ProblemStatements />
-      <Sponsors />
+      <SponsorsWrapperMain />
       <Speakers />
       <Footer />
     </div>
