@@ -5,7 +5,7 @@ import guide from "./Static/guide-vector.png"
 export default function Guidelines() {
   return <div className='guidelines'>
   <div className="guidelines-container">
-    <h1 className='guidelines-heading'>Guidelines</h1>
+    <h1 className='guidelines-heading main-heading' data-content="Guidelines">Guidelines</h1>
     <img src= {guide}/>
     <div className="points">
       <ul>

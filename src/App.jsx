@@ -3,7 +3,7 @@ import Guidelines from "./Components/Guidelines/Guidelines.jsx";
 import Landing from "./Components/Landing/Landing";
 import Speakers from "./Components/Speakers/Speakers";
 import ProblemStatements from "./Components/ProblemStatements/ProblemStatements";
-
+import './App.css'
 function App() {
   return (
     <div className="App">

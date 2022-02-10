@@ -1,6 +1,7 @@
 .landing{
     height: 100vh;
     background: url('./assets/bg.png');
+    text-align: center;
 }
 .landing h1{
     font-family: Poppins;
