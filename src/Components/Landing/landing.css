@@ -41,6 +41,9 @@
   border-radius: 16px;
   outline: none;
   border: none;
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: 0.02rem;
   padding: 1% 5%;
   color: #ffffff;
   transition: all 0.3s ease-in-out;
