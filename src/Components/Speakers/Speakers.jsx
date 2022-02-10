@@ -76,7 +76,8 @@ export default class Responsive extends Component {
                 </div>
               </div>
               <div className="card">
-                <img src={"https://picsum.photos/400/300"} alt={"Speaker-3 image"}/>
+                <img src={"https://picsum.photos/400/300"} alt={"Speaker-4 image"}/>
+                <img className="dots-cards" src={dots} alt=""/>
                 <div className="card-body">
                   <h5>Lorem Ipsum</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed elit quam. Nulla rhoncus euismod dolor 
@@ -84,7 +85,8 @@ export default class Responsive extends Component {
                 </div>
               </div>
               <div className="card">
-                <img src={"https://picsum.photos/400/300"} alt={"Speaker-3 image"}/>
+                <img src={"https://picsum.photos/400/300"} alt={"Speaker-5 image"}/>
+                <img className="dots-cards" src={dots} alt=""/>
                 <div className="card-body">
                   <h5>Lorem Ipsum</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed elit quam. Nulla rhoncus euismod dolor 
@@ -92,7 +94,8 @@ export default class Responsive extends Component {
                 </div>
               </div>
               <div className="card">
-                <img src={"https://picsum.photos/400/300"} alt={"Speaker-3 image"}/>
+                <img src={"https://picsum.photos/400/300"} alt={"Speaker-6 image"}/>
+                <img className="dots-cards" src={dots} alt=""/>
                 <div className="card-body">
                   <h5>Lorem Ipsum</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed elit quam. Nulla rhoncus euismod dolor 

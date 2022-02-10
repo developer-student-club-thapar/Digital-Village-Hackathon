@@ -1,10 +1,10 @@
-import React from "react";
+import React, { Fragment } from "react";
 // import Footer from "../components/footer";
 // import chet from "../components/logo.png";
 
 export function FooterContainer() {
   return (
-    <Footer>
+    <Fragment>
       <div
         className="container"
         style={{
@@ -110,6 +110,6 @@ export function FooterContainer() {
           </div>
         </div>
       </div>
-    </Footer>
+    </Fragment>
   );
 }

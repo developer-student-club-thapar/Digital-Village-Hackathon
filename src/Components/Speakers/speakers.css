@@ -1,15 +1,16 @@
 .speakers {
     background-color: #072227;
     margin-bottom: 15vh;
+    padding-top: 6vh;
 }
 
 .speakers h1{
     color: #08BD04;
-    text-align: center;
-    margin-top: 10vh;
     margin-bottom: 10vh;
     font-family: 'Poppins', sans-serif;
     font-size: 5rem;
+    margin-left: 39vw;
+    margin-bottom: 5vh;
 }
 
 /* .card-group {
@@ -19,7 +20,7 @@
 
 .dots {
     position: relative;
-    bottom: 14vh;
+    bottom: 9vh;
     right: 16.5vh;
 }
 .dots-cards{
@@ -64,4 +65,30 @@
 .slick-dots li button:before{
     font-size: 20px !important;
     color: white !important;
+}
+
+@media only screen and (max-width: 1025px) {
+    .speakers h1{
+        margin-left: 33%;
+    }
+    .dots{
+        left: -8.5vh;
+        bottom: 7vh;
+    }
+    .dots-cards{
+        left: 23px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .speakers h1{
+        margin-left: 2vh;
+    }
+    .dots{
+        left: -15vh;
+        bottom: 8vh;
+    }
+    .dots-cards{
+        left: 23px;
+    }
 }
