@@ -44,13 +44,13 @@ export default class Responsive extends Component {
     };
     return (
       <div className="speakers">
-        <h1>SPEAKERS</h1>
-        {/* <img className="dots" src={dots} alt=""/> */}
+        <h1 className="main-heading" data-content="Speakers">Speakers</h1>
+        <img className="dots" src={dots} alt=""/>
           {/* <div className="card-group"> */}
             <Slider {...settings}>
               <div className="card">
                 <img src={"https://picsum.photos/400/300"} alt={"Speaker-1 image"}/>
-                {/* <img className="dots-cards" src={dots} alt=""/> */}
+                <img className="dots-cards" src={dots} alt=""/>
                 <div className="card-body">
                   <h5>Lorem Ipsum</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed elit quam. Nulla rhoncus euismod dolor 
@@ -59,7 +59,7 @@ export default class Responsive extends Component {
               </div>
               <div className="card">                
                 <img src={"https://picsum.photos/400/300"} alt={"Speaker-2 image"}/>
-                {/* <img className="dots-cards" src={dots} alt=""/> */}
+                <img className="dots-cards" src={dots} alt=""/>
                 <div className="card-body">
                   <h5>Lorem Ipsum</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed elit quam. Nulla rhoncus euismod dolor 
@@ -68,7 +68,7 @@ export default class Responsive extends Component {
               </div>
               <div className="card">
                 <img src={"https://picsum.photos/400/300"} alt={"Speaker-3 image"}/>
-                {/* <img className="dots-cards" src={dots} alt=""/> */}
+                <img className="dots-cards" src={dots} alt=""/>
                 <div className="card-body">
                   <h5>Lorem Ipsum</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed elit quam. Nulla rhoncus euismod dolor 

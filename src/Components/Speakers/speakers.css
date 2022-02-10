@@ -1,12 +1,12 @@
 .speakers {
     background-color: #072227;
-    padding-bottom: 15vh;
+    margin-bottom: 15vh;
 }
 
 .speakers h1{
     color: #08BD04;
     text-align: center;
-    padding-top: 10vh;
+    margin-top: 10vh;
     margin-bottom: 10vh;
     font-family: 'Poppins', sans-serif;
     font-size: 5rem;
@@ -21,6 +21,12 @@
     position: relative;
     bottom: 14vh;
     right: 16.5vh;
+}
+.dots-cards{
+    position: absolute;
+    top: 10px;
+    width: 2vw !important;
+    left: 32.5px;
 }
 .card img{
     display: block;
@@ -52,5 +58,10 @@
     line-height: 20px;
     padding: 20vh 0;
 }
-
-
+.slick-dots{
+    background-color: inherit;
+}
+.slick-dots li button:before{
+    font-size: 20px !important;
+    color: white !important;
+}

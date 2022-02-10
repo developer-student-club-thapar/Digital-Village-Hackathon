@@ -2,12 +2,13 @@
     display: flex;
     background-color:rgba(40, 42, 49, 0.9);
     padding: 1.4%;
+    max-width: 100vw;
 }
 .nav-bar span{
     color: #ffffff !important;
     margin: auto;
     text-transform: uppercase;
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
