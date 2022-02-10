@@ -15,7 +15,7 @@ function App() {
       <ProblemStatements />
       <Sponsors />
       <Speakers />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

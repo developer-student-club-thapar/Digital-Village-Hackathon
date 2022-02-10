@@ -1,6 +1,7 @@
 .speakers {
   background-color: #072227;
-  margin-bottom: 15vh;
+  padding-bottom: 10vh;
+  /* margin-bottom: 15vh; */
 }
 
 .speakers h1 {
