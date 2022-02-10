@@ -1,17 +1,16 @@
-import React from "react";
+import React, { Fragment } from "react";
 // import Footer from "../components/footer";
 // import chet from "../components/logo.png";
 
 export function FooterContainer() {
   return (
-    <Footer>
+    <Fragment>
       <div
         className="container"
         style={{
           padding: "80px 60px",
           background: "#282A31",
-        }}
-      ></div>
+        }}>
       <div
         className="wrapper"
         style={{
@@ -109,7 +108,8 @@ export function FooterContainer() {
             </icons>
           </div>
         </div>
+        </div>
       </div>
-    </Footer>
+    </Fragment>
   );
 }
