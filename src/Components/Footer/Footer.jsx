@@ -1,115 +1,38 @@
-import React, { Fragment } from "react";
-// import Footer from "../components/footer";
-// import chet from "../components/logo.png";
+import React from "react";
+import ig from "./assets/ig.svg";
+import linkedin from "./assets/linkedin.svg";
+import dis from "./assets/dis.svg";
+import styled from "@emotion/styled";
 
-export function FooterContainer() {
+const FooterWrapper = styled.div`
+  padding: 1rem 3rem;
+
+  background-color: #282a31;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`;
+const Title = styled.h1``;
+
+const IconsDiv = styled.div``;
+
+const Icon = styled.img`
+  padding: 1rem;
+`;
+
+function Footer() {
   return (
-    <Fragment>
-      <div
-        className="container"
-        style={{
-          padding: "80px 60px",
-          background: "#282A31",
-        }}>
-      <div
-        className="wrapper"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          maxWidth: "1000px",
-          margin: "0 auto",
-          // background:"red",
-          flexDirection: "column",
-        }}
-      >
-        <div
-          className="Row"
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
-            gridGap: "20px",
-          }}
-        >
-          {/* <img
-            src={chet}
-            style={{
-              display: "flex",
-              justifyContent: "left",
-              position: "relative",
-              top: "-280px",
-              left: "-200px",
-              width: "700px",
-              height: "700px",
-            }}
-          /> */}
-          {/* <Footer.Column>
-            <Footer.Title className="Quick Links">Quick Links</Footer.Title>
-          </Footer.Column>
-          <Footer.Column>
-            <Footer.Link href="#">Home</Footer.Link>
-            <Footer.Link href="#">Guidelines</Footer.Link>
-            <Footer.Link href="#">Problem Statements</Footer.Link>
-            <Footer.Link href="#">Register</Footer.Link>
-            <Footer.Link href="#">Submit</Footer.Link>
-          </Footer.Column>
-          <Footer.Column></Footer.Column> */}
-          <div
-            className="footer-column"
-            style={{
-              position: "relative",
-              right: "-400px",
-              top: "-200px",
-            }}
-          >
-            <div
-              className="Title"
-              style={{
-                fontSize: "24px",
-                color: "#fff",
-                marginBottom: "40px",
-                textAlign: "center",
-                fontWeight: "bold",
-                fontFamily: "Nunito Sans, sans-serif",
-              }}
-            >
-              Contact Us
-            </div>
-            <icons
-              className="icons"
-              style={{
-                color: "white",
-                display: "flex",
-                position: "relative",
-                flexDirection: "row",
-                justifyContent: "space-between",
-              }}
-            >
-              <i
-                class="fab fa-linkedin"
-                style={{
-                  fontSize: "26px",
-                  cursor: "pointer",
-                }}
-              ></i>
-              <i
-                class="fab fa-instagram"
-                style={{
-                  fontSize: "26px",
-                  cursor: "pointer",
-                }}
-              ></i>
-              <i
-                class="fab fa-discord"
-                style={{
-                  fontSize: "26px",
-                  cursor: "pointer",
-                }}
-              ></i>
-            </icons>
-          </div>
-        </div>
-        </div>
-      </div>
-    </Fragment>
+    <FooterWrapper>
+      <Title>Contact Us</Title>
+      <IconsDiv>
+        <Icon src={ig} />
+        <Icon src={linkedin} />
+        <Icon src={dis} />
+      </IconsDiv>
+    </FooterWrapper>
   );
 }
+
+export default Footer;
