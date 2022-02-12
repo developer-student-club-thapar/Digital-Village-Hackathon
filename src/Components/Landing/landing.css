@@ -14,12 +14,14 @@
 .landing h1 {
   font-family: Poppins;
   font-style: normal;
-  font-weight: bold;
-  font-size: 85.4152px;
-  line-height: 128px;
+  font-weight: bolder;
+  font-size: 95.4152px;
   text-align: center;
   color: #ffffff;
   background-color: transparent;
+  margin-top: 0;
+  position: relative;
+  top: -40px;
 }
 .landing h1:nth-child(1) {
   padding-top: 22vh;
@@ -32,7 +34,7 @@
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
-  font-size: 34.6321px;
+  font-size: 27.6321px;
   line-height: 52px;
   /* identical to box height */
   background-color: transparent;
@@ -40,6 +42,8 @@
   text-align: center;
   padding-bottom: 10vh;
   color: #ffffff;
+  position: relative;
+  top: -40px;
 }
 .landing button {
   background: #50bebb;
@@ -53,6 +57,8 @@
   color: #ffffff;
   transition: all 0.3s ease-in-out;
   margin: 0 0.5%;
+  position: relative;
+  top: -40px;
 }
 .landing button:hover {
   background-color: #4da8a5;

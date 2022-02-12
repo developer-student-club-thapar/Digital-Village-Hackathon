@@ -57,7 +57,7 @@ function ProblemStatements() {
       <Wrapper>
         <HeadingNav>
           <StyledImg src={grid} alt="" />
-          <HeadingTitle>Problem Statement</HeadingTitle>
+          <h1 className="main-heading" data-content='ProblemStatement'>ProblemStatement</h1>
         </HeadingNav>
         <StatementCard />
       </Wrapper>

@@ -18,20 +18,20 @@ const TitleDiv = styled.div`
   }
 `;
 
-const Title = styled.h1`
-  background-color: #282a31;
-  padding: 2.5rem 5rem;
-  color: #08bd04;
-  font-size: 3rem;
-  font-weight: bold;
-  letter-spacing: 0.2rem;
-  text-shadow: 2px 2px white;
+// const Title = styled.h1`
+//   background-color: #282a31;
+//   padding: 2.5rem 5rem;
+//   color: #08bd04;
+//   font-size: 3rem;
+//   font-weight: bold;
+//   letter-spacing: 0.2rem;
+//   text-shadow: 2px 2px white;
 
-  @media (max-width: 850px) {
-    background-color: inherit;
-    width: 100%;
-  }
-`;
+//   @media (max-width: 850px) {
+//     background-color: inherit;
+//     width: 100%;
+//   }
+// `;
 
 const SponsorSVG = styled.img`
   display: none;
@@ -78,7 +78,7 @@ function SponsorsWrapperMain() {
       <SponsorHeading>
         <SponsorSVG src={spn} />
         <TitleDiv>
-          <Title>Sponsors</Title>
+          <h1 className="main-heading" data-content='Sponsors'>Sponsors</h1>
         </TitleDiv>
       </SponsorHeading>
       <SponsorsCard>

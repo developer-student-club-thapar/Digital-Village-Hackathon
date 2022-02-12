@@ -1,8 +1,10 @@
 .nav-bar{
     display: flex;
     background-color:rgba(40, 42, 49, 0.9);
-    padding: 1.4%;
     max-width: 100vw;
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 0;
 }
 .nav-bar span{
     color: #ffffff !important;
@@ -14,4 +16,15 @@
     font-size: 24px;
     line-height: 36px;
     text-align: center;
+    position: sticky !important;
+    top: 0;
 }
+.navbar-chips{
+    height: 100%;
+    padding: 1.4%;
+    transition: all 0.3s ;
+}   
+.navbar-chips:hover {
+    background-color: rgb(65, 65, 65);
+
+  }
