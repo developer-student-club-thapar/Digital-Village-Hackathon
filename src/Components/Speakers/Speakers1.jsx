@@ -14,7 +14,7 @@ export default class SimpleSlider extends Component {
     };
     return (
       <div className="speakers">
-        <h2>Speakers</h2>
+        <h2 className="main-heading" data-content="Speakers">Speakers</h2>
         <Slider {...settings}>
           <Card style={{ width: "18rem"}}>
             <Card.Img variant="top" src="holder.js/100px180" />

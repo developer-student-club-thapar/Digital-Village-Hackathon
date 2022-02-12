@@ -19,8 +19,9 @@
 }
 
 .about-content-img {
-  height: 350px;
-  width: 350px;
+  height: 128px;
+  width: 123px;
+  transform: scale(1.75);
 }
 
 .col-sm-4 {

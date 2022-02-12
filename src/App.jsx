@@ -5,7 +5,7 @@ import Speakers from "./Components/Speakers/Speakers";
 import ProblemStatements from "./Components/ProblemStatements/ProblemStatements";
 import SponsorsWrapperMain from "./Components/Sponsors/SponsorsWrapperMain";
 import Footer from "./Components/Footer/Footer";
-import "./App.css";
+import "./app.css";
 
 function App() {
   return (

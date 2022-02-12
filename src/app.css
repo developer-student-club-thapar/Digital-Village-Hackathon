@@ -1,4 +1,30 @@
 body {
-  overflow-x: hidden;
   font-family: "Poppins", sans-serif;
+}
+.main-heading:after{
+  content: attr(data-content);
+  position: absolute;
+  top: 4.5px;
+  left: 5px;
+  z-index: -1;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  text-align: inherit;
+}
+.main-heading{
+  color: rgba(8, 189, 4, 1) !important;
+  z-index: 1;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 77.95px;
+  line-height: 117px;
+  text-align: left;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
