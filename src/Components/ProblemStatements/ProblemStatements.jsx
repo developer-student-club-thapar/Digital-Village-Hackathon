@@ -55,9 +55,11 @@ function ProblemStatements() {
   return (
     <>
       <Wrapper>
-        <HeadingNav>
-          <StyledImg src={grid} alt="" />
-          <h1 className="main-heading" data-content='ProblemStatement'>ProblemStatement</h1>
+        <HeadingNav id="problem">
+          {/* <StyledImg src={grid} alt="" /> */}
+          <h1 className="main-heading" data-content="ProblemStatement">
+            ProblemStatement
+          </h1>
         </HeadingNav>
         <StatementCard />
       </Wrapper>

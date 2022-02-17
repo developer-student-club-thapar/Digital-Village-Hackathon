@@ -5,7 +5,7 @@ import Navbar from "../navbar/Navbar";
 const About = () => {
   return (
     <Fragment>
-      <div className="row">
+      <div className="row" id="about">
         <Navbar />
         <div className="col-sm-4">
           <img src={abot} className="about-content-img" />
