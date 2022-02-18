@@ -84,10 +84,12 @@ export default class Responsive extends Component {
       ],
     };
     return (
-      <div className="speakers">
+      <div className="speakers" id="speakers">
         <HeadingNav>
-          <StyledImg src={grid} alt="" />
-          <h1 className="main-heading" data-content="Speakers">Speakers</h1>
+          {/* <StyledImg src={grid} alt="" /> */}
+          <h1 className="main-heading" data-content="Speakers">
+            Speakers
+          </h1>
         </HeadingNav>
         {/* <div className="card-group"> */}
         <Slider {...settings} style={{ margin: "0 5rem", padding: "2rem 0" }}>

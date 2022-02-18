@@ -63,3 +63,26 @@
 .landing button:hover {
   background-color: #4da8a5;
 }
+
+.landing .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  .landing h1 {
+    font-size: 8vw;
+  }
+  .landing h3 {
+    font-size: 2.5vw;
+  }
+  .landing .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .landing .buttons button {
+    font-size: 2vw;
+    /* width: 100%; */
+  }
+}
