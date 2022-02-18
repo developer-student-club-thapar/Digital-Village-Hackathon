@@ -27,6 +27,12 @@ const CardContentWrapper = styled.div`
 const TitleWrapper = styled.div`
   text-align: center;
   margin: 0.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* number of lines to show */
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
 `;
 
 const Title = styled.h5`

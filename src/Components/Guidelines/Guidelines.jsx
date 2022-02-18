@@ -12,7 +12,7 @@ export default function Guidelines() {
         >
           Guidelines
         </h1>
-        <img src={guide} />
+        <img class="guide-image" src={guide} />
         <div className="points">
           <ul>
             <li>

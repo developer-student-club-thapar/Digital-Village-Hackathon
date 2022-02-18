@@ -21,6 +21,12 @@ const DSCLogo = styled.div`
   }
 `;
 
+const Dsclog = styled.img`
+  @media (max-width: 600px) {
+    width: 100% !important;
+  }
+`;
+
 export default function Nav() {
   return (
     <div style={{ paddingTop: "1rem", width: "100vw" }}>
@@ -62,7 +68,7 @@ export default function Nav() {
         </LogoDiv>
         <DSCLogo className="nav-item">
           {/* <a href="#"> */}
-          <img
+          <Dsclog
             src={dsc}
             style={{ objectFit: "contain" }}
             alt=""

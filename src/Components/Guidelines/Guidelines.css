@@ -15,7 +15,7 @@
   margin: 12vh 5vh 5vh 10vh;
   font-size: 4.7rem;
 }
-.guidelines{
+.guidelines {
   max-width: 100vw;
   position: relative;
 }
@@ -38,9 +38,13 @@
 }
 
 @media only screen and (max-width: 1025px) {
+  .guidelines-container img {
+    display: none;
+  }
+
   .guidelines-heading {
-    padding-top: 6vh;
-    padding-left: 5vh;
+    /* padding-top: 6vh;
+    padding-left: 5vh; */
     font-size: 2.5rem;
     padding-bottom: 3vh;
   }
@@ -52,17 +56,17 @@
 }
 
 @media only screen and (max-width: 700px) {
-  .guidelines-container img {
-    visibility: hidden;
-  }
   .guidelines-heading {
-    padding-left: 6vh;
-    margin-bottom: -1vh;
+    /* padding-left: 6vh;
+    margin-bottom: -1vh; */
     font-size: 2.5rem;
   }
   .points {
     width: 90%;
     padding-left: 7vh;
     font-size: 1.2rem;
+  }
+  .guidelines-container {
+    height: 120vh;
   }
 }
