@@ -4,6 +4,22 @@ import dsc from "./assets/dsc.png";
 import ti from "./assets/ti.png";
 import meity from "./assets/meity.png";
 import step from "./assets/step.png";
+import styled from "@emotion/styled";
+
+const LogoDiv = styled.div`
+  transform: translateX(-50px);
+  @media (max-width: 1400px) {
+    display: none;
+  }
+`;
+
+const DSCLogo = styled.div`
+  transform: translateX(-50px);
+  @media (max-width: 1400px) {
+    width: 100%;
+    margin: 0 0 10vh 0;
+  }
+`;
 
 export default function Nav() {
   return (
@@ -12,11 +28,12 @@ export default function Nav() {
         className="nav"
         style={{
           display: "flex",
+          flexWrap: "wrap",
           justifyContent: "space-between",
           padding: "1rem 5rem 2rem 5rem",
         }}
       >
-        <div className="nav-item">
+        <LogoDiv className="nav-item">
           {/* <a href="#"> */}
           <img
             src={tel}
@@ -26,8 +43,8 @@ export default function Nav() {
             width="140px"
           />
           {/* </a> */}
-        </div>
-        <div className="nav-item" style={{ transform: "translateX(-50px)" }}>
+        </LogoDiv>
+        <LogoDiv className="nav-item">
           {/* <a href="#"> */}
           <img
             src={meity}
@@ -42,8 +59,8 @@ export default function Nav() {
             width="200px"
           />
           {/* </a> */}
-        </div>
-        <div className="nav-item" style={{ transform: "translateX(-50px)" }}>
+        </LogoDiv>
+        <DSCLogo className="nav-item">
           {/* <a href="#"> */}
           <img
             src={dsc}
@@ -53,8 +70,8 @@ export default function Nav() {
             width="530px"
           />
           {/* </a> */}
-        </div>
-        <div className="nav-item" style={{ transform: "translateX(-50px)" }}>
+        </DSCLogo>
+        <LogoDiv className="nav-item">
           {/* <a> */}
           <img
             src={step}
@@ -69,8 +86,8 @@ export default function Nav() {
             width="200px"
           />
           {/* </a> */}
-        </div>
-        <div className="nav-item">
+        </LogoDiv>
+        <LogoDiv className="nav-item">
           {/* <a href="#"> */}
           <img
             src={ti}
@@ -80,7 +97,7 @@ export default function Nav() {
             width="60px"
           />
           {/* </a> */}
-        </div>
+        </LogoDiv>
       </div>
     </div>
   );

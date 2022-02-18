@@ -43,3 +43,9 @@ a:active {
   text-decoration: none;
   color: inherit;
 }
+
+@media (max-width: 1200px) {
+  .nav-bar {
+    display: none;
+  }
+}
