@@ -9,11 +9,11 @@
     margin-top: -10vh;
 } */
 
-.dots {
+/* .dots {
   position: relative;
   bottom: 14vh;
   right: 16.5vh;
-}
+} */
 .dots-cards {
   position: absolute;
   top: 10px;
@@ -52,14 +52,19 @@
   font-family: "slick";
   font-size: 6px;
   line-height: 20px;
-  padding: 20vh 0;
 }
 .slick-dots {
   background-color: inherit;
+  margin: -3.5vh 0 !important;
 }
 .slick-dots li button:before {
   font-size: 20px !important;
   color: black !important;
+}
+
+.slick-slide {
+  width: 500px !important;
+  margin: 0 15px;
 }
 
 /* .main-heading {
@@ -84,11 +89,6 @@
   .main-heading {
     font-size: 2rem;
   }
-}
-
-.slick-slide {
-  width: 500px !important;
-  margin: 0 15px;
 }
 
 @media only screen and (max-width: 1025px) {
