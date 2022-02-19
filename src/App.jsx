@@ -3,9 +3,9 @@ import Guidelines from "./Components/Guidelines/Guidelines.jsx";
 import Landing from "./Components/Landing/Landing";
 import Speakers from "./Components/Speakers/Speakers";
 import ProblemStatements from "./Components/ProblemStatements/ProblemStatements";
-import Sponsor from "./components/sponsor/sponsor";
-import { FooterContainer } from "./components/Footer/Footer";
-import './App.css'
+import SponsorsWrapperMain from "./Components/Sponsors/SponsorsWrapperMain";
+import Footer from "./Components/Footer/Footer";
+import "./app.css";
 
 function App() {
   return (
@@ -13,10 +13,10 @@ function App() {
       <Landing />
       <About />
       <Guidelines />
-      <Speakers />
-      <Sponsor />
       <ProblemStatements />
-      <FooterContainer />
+      <SponsorsWrapperMain />
+      <Speakers />
+      <Footer />
     </div>
   );
 }

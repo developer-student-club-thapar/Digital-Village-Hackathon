@@ -1,16 +1,7 @@
 .speakers {
-    background-color: #072227;
-    margin-bottom: 15vh;
-    padding-top: 6vh;
-}
-
-.speakers h1{
-    color: #08BD04;
-    margin-bottom: 10vh;
-    font-family: 'Poppins', sans-serif;
-    font-size: 5rem;
-    margin-left: 39vw;
-    margin-bottom: 5vh;
+  background-color: #072227;
+  padding-bottom: 10vh;
+  /* margin-bottom: 15vh; */
 }
 
 /* .card-group {
@@ -19,52 +10,85 @@
 } */
 
 .dots {
-    position: relative;
-    bottom: 9vh;
-    right: 16.5vh;
+  position: relative;
+  bottom: 14vh;
+  right: 16.5vh;
 }
-.dots-cards{
-    position: absolute;
-    top: 10px;
-    width: 2vw !important;
-    left: 32.5px;
+.dots-cards {
+  position: absolute;
+  top: 10px;
+  width: 2vw !important;
+  left: 32.5px;
 }
-.card img{
-    display: block;
-    margin: 5vh auto;
-    width: 80%;
-}
-
-.card{
-    background-color: black;
-    font-size: 1.2rem;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    font-weight: 500;
+.card img {
+  display: block;
+  margin: 5vh auto;
+  width: 80%;
 }
 
-.card h5{
-    font-size: 2.5rem;
-    padding-bottom: 2vh;
+.card {
+  background-color: black;
+  font-size: 1.2rem;
+  color: white;
+  border-radius: 2rem;
+  /* font-weight: 500; */
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+.card h5 {
+  font-size: 2.5rem;
+  padding-bottom: 2vh;
 }
 
 .slick-dots {
-    background-color: #072227;
-    padding: 20vh 0;
+  background-color: #072227;
+  padding: 20vh 0;
 }
 
 .slick-dots li button {
-    font-family: 'slick';
-    font-size: 6px;
-    line-height: 20px;
-    padding: 20vh 0;
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 20px;
+  padding: 20vh 0;
 }
-.slick-dots{
-    background-color: inherit;
+.slick-dots {
+  background-color: inherit;
 }
-.slick-dots li button:before{
-    font-size: 20px !important;
-    color: white !important;
+.slick-dots li button:before {
+  font-size: 20px !important;
+  color: black !important;
+}
+
+/* .main-heading {
+  padding-top: 3rem;
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: #08bd04;
+  text-shadow: 4px 4px #000;
+  line-height: 1.2;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+} */
+
+@media (max-width: 1200px) {
+  .main-heading {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 950px) {
+  .main-heading {
+    font-size: 2rem;
+  }
+}
+
+.slick-slide {
+  width: 500px !important;
+  margin: 0 15px;
 }
 
 @media only screen and (max-width: 1025px) {

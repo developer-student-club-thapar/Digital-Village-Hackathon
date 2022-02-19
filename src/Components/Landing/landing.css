@@ -1,47 +1,65 @@
-.landing{
-    height: 100vh;
-    background: url('./assets/bg.png');
-    text-align: center;
-}
-.landing h1{
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 85.4152px;
-    line-height: 128px;
-    text-align: center;
-    color: #FFFFFF;
-    background-color: transparent;
-}
-.landing h1:nth-child(1){
-    padding-top: 22vh;
-    margin-bottom: 0;
-}
-.landing h1:nth-child(2){
-    margin-top: 0;
-}
-.landing h3{
-    font-family: Poppins;
-font-style: normal;
-font-weight: 500;
-font-size: 34.6321px;
-line-height: 52px;
-/* identical to box height */
-background-color: transparent;
+.landing {
+  height: 100vh;
+  background-image: url("./assets/bg.png"),
+    radial-gradient(circle, hsla(0, 0%, 78%, 0) 18%, hsla(0, 0%, 0%, 0.5) 100%);
 
-text-align: center;padding-bottom: 10vh;
-color: #FFFFFF;
+  /* background-image: url("./assets/bg.png"); */
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9FCCFA", endColorstr="#000000", GradientType=1 );
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.landing h1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 95.4152px;
+  text-align: center;
+  color: #ffffff;
+  background-color: transparent;
+  margin-top: 0;
+  position: relative;
+  top: -40px;
+}
+.landing h1:nth-child(1) {
+  padding-top: 22vh;
+  margin-bottom: 0;
+}
+.landing h1:nth-child(2) {
+  margin-top: 0;
+}
+.landing h3 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 27.6321px;
+  line-height: 52px;
+  /* identical to box height */
+  background-color: transparent;
+
+  text-align: center;
+  padding-bottom: 10vh;
+  color: #ffffff;
+  position: relative;
+  top: -40px;
 }
 .landing button {
-    background: #50BEBB;
-    border-radius: 16px;
-    outline: none;
-    border: none;
-    padding: 1% 5%;
-    color: #FFFFFF;
-    transition: all 0.3s ease-in-out;
-    margin: 0 0.5%;
+  background: #50bebb;
+  border-radius: 16px;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: 0.02rem;
+  padding: 1% 5%;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+  margin: 0 0.5%;
+  position: relative;
+  top: -40px;
 }
-.landing button:hover{
-    background-color: #4da8a5;
+.landing button:hover {
+  background-color: #4da8a5;
 }

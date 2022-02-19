@@ -7,6 +7,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   background-color: #072227;
+  padding: 2rem 0;
 `;
 
 const StyledImg = styled.img`
@@ -56,7 +57,7 @@ function ProblemStatements() {
       <Wrapper>
         <HeadingNav>
           <StyledImg src={grid} alt="" />
-          <HeadingTitle>Problem Statement</HeadingTitle>
+          <h1 className="main-heading" data-content='ProblemStatement'>ProblemStatement</h1>
         </HeadingNav>
         <StatementCard />
       </Wrapper>
