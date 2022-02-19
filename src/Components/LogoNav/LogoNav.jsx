@@ -6,6 +6,11 @@ import meity from "./assets/meity.png";
 import step from "./assets/step.png";
 import styled from "@emotion/styled";
 
+const NavDiv = styled.div`
+  // @media (max-width: 1400px) {
+  //   visibility: hidden;
+  // }
+`;
 const LogoDiv = styled.div`
   transform: translateX(-50px);
   @media (max-width: 1400px) {
@@ -17,7 +22,7 @@ const DSCLogo = styled.div`
   transform: translateX(-50px);
   @media (max-width: 1400px) {
     width: 100%;
-    margin: 0 0 10vh 0;
+    margin: 0 0 10vh 2rem;
   }
 `;
 
@@ -29,7 +34,7 @@ const Dsclog = styled.img`
 
 export default function Nav() {
   return (
-    <div style={{ paddingTop: "1rem", width: "100vw" }}>
+    <NavDiv style={{ paddingTop: "1rem", width: "100vw" }}>
       <div
         className="nav"
         style={{
@@ -105,6 +110,6 @@ export default function Nav() {
           {/* </a> */}
         </LogoDiv>
       </div>
-    </div>
+    </NavDiv>
   );
 }

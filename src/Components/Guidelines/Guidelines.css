@@ -5,14 +5,14 @@
   position: relative;
   padding-top: 2vh;
   width: 100%;
-  min-height: 100vh;
+  min-height: 75vh;
 }
 
 .guidelines-heading {
   text-align: left;
   font-family: "Poppins", sans-serif;
   color: white;
-  margin: 12vh 5vh 5vh 10vh;
+  margin: 0 5vh 1vh 10vh;
   font-size: 4.7rem;
 }
 .guidelines {
@@ -43,8 +43,6 @@
   }
 
   .guidelines-heading {
-    /* padding-top: 6vh;
-    padding-left: 5vh; */
     font-size: 2.5rem;
     padding-bottom: 3vh;
   }
@@ -56,17 +54,34 @@
 }
 
 @media only screen and (max-width: 700px) {
+  .guidelines-container {
+    min-height: 95vh;
+  }
   .guidelines-heading {
-    /* padding-left: 6vh;
-    margin-bottom: -1vh; */
     font-size: 2.5rem;
+    margin: 0 5vh 5vh 7vh;
   }
   .points {
     width: 90%;
     padding-left: 7vh;
     font-size: 1.2rem;
   }
+}
+
+@media only screen and (max-width: 500px) {
   .guidelines-container {
-    height: 120vh;
+    min-height: 90vh;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .guidelines-container {
+    min-height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .guidelines-container {
+    min-height: 130vh;
   }
 }
