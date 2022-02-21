@@ -1,6 +1,5 @@
 import React from "react";
 import LogoNav from "../LogoNav/LogoNav";
-import CarouselNav from "../LogoNav/CarouselNav";
 import "./landing.css";
 
 const Landing = () => {
@@ -13,7 +12,6 @@ const Landing = () => {
       <div className="buttons">
         <button>Register</button> <button>Submit</button>
       </div>
-      {/* <CarouselNav /> */}
     </div>
   );
 };
