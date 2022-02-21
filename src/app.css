@@ -1,7 +1,8 @@
 body {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
-.main-heading:after{
+.main-heading:after {
   content: attr(data-content);
   position: absolute;
   top: 4.5px;
@@ -12,7 +13,7 @@ body {
   -webkit-text-stroke-color: #fff;
   text-align: inherit;
 }
-.main-heading{
+.main-heading {
   color: rgba(8, 189, 4, 1) !important;
   z-index: 1;
   position: relative;
@@ -27,4 +28,29 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+#mobview {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .main-heading {
+    font-size: 55px !important ;
+  }
+}
+
+@media (max-width: 540px) {
+  #tabview {
+    display: none;
+  }
+
+  #mobview {
+    display: block;
+  }
+
+  #mobview:nth-child(3) {
+    position: relative;
+    top: -35px;
+  }
 }

@@ -63,3 +63,74 @@
 .landing button:hover {
   background-color: #4da8a5;
 }
+
+.landing .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  .landing h1 {
+    font-size: 5.5rem;
+  }
+  .landing h3 {
+    font-size: 2rem;
+  }
+
+  .landing h1:nth-child(2) {
+    margin-top: 10rem;
+  }
+
+  .landing .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .landing .buttons button {
+    font-size: 1.5rem;
+    /* width: 100%; */
+  }
+}
+
+@media (max-width: 900px) {
+  .landing h1 {
+    font-size: 4.5rem;
+  }
+  .landing h3 {
+    font-size: 1.5rem;
+  }
+
+  .landing h1:nth-child(2) {
+    margin-top: 12rem;
+  }
+
+  .landing .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .landing .buttons button {
+    font-size: 1.5rem;
+    /* width: 100%; */
+  }
+}
+@media (max-width: 600px) {
+  .landing h1 {
+    font-size: 3rem;
+  }
+  .landing h1:nth-child(2) {
+    margin-top: 12rem;
+  }
+  .landing h3 {
+    font-size: 1rem;
+  }
+  .landing .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .landing .buttons button {
+    font-size: 1rem;
+    /* width: 100%; */
+  }
+}

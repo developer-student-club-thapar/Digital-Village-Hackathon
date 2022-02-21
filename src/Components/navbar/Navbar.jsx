@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Navbar } from "react-bootstrap";
 import "./navbar.css";
 
-
-
 const Navbar1 = () => {
   // const [scrolled, setScrolled] = useState(false);
   // const handleScroll = () => {
@@ -20,26 +18,28 @@ const Navbar1 = () => {
   //   window.addEventListener("scroll", handleScroll);
   // });
   useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'navbar.js';
+    const script = document.createElement("script");
+    script.src = "navbar.js";
     script.async = true;
     script.defer = true;
     document.body.appendChild(script);
     // return () => {
     //   document.body.removeChild(script);
     // }
-}, []);
+  }, []);
 
   return (
-      <div className="nav-bar" id="customnavbar">
-        <span className="navbar-chips">Home</span>
-        <span className="navbar-chips">About Us</span>
-        <span className="navbar-chips">Guidelines</span>
-        <span className="navbar-chips">Problem Statements</span>
-        <span className="navbar-chips">Sponsors</span>
-        <span className="navbar-chips">Speakers</span>
-        <span className="navbar-chips">Prizes</span>
-      </div>
+    <div className="nav-bar" id="customnavbar">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#guidelines">Guidelines</a>
+      <a href="#problem">Problem Statements</a>
+      <a href="#sponsors">Sponsors</a>
+      <a href="#speakers">Speakers</a>
+      {/* <span className="navbar-chips">
+        <a href="#guidelines">Prizes</a>
+      </span> */}
+    </div>
   );
 };
 

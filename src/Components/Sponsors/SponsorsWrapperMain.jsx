@@ -11,10 +11,12 @@ const SponsorHeading = styled.div`
   justify-content: space-between;
 `;
 const TitleDiv = styled.div`
+  padding-right: 2rem;
   @media (max-width: 850px) {
-    background-color: #282a31;
+    display: flex;
+    // background-color: #282a31;
     width: 100%;
-    text-align: center;
+    justify-content: center;
   }
 `;
 
@@ -74,11 +76,17 @@ const SponsorsCard = styled.div`
 
 function SponsorsWrapperMain() {
   return (
-    <SponsorsWrapper>
+    <SponsorsWrapper id="sponsors">
       <SponsorHeading>
         <SponsorSVG src={spn} />
         <TitleDiv>
-          <h1 className="main-heading" data-content='Sponsors'>Sponsors</h1>
+          <h1
+            className="main-heading"
+            data-content="Sponsors"
+            // style={{ textAlign: "center" }}
+          >
+            Sponsors
+          </h1>
         </TitleDiv>
       </SponsorHeading>
       <SponsorsCard>

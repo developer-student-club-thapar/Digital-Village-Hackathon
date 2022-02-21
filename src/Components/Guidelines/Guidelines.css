@@ -5,17 +5,17 @@
   position: relative;
   padding-top: 2vh;
   width: 100%;
-  min-height: 100vh;
+  min-height: 75vh;
 }
 
 .guidelines-heading {
   text-align: left;
   font-family: "Poppins", sans-serif;
   color: white;
-  margin: 12vh 5vh 5vh 10vh;
+  margin: 0 5vh 1vh 10vh;
   font-size: 4.7rem;
 }
-.guidelines{
+.guidelines {
   max-width: 100vw;
   position: relative;
 }
@@ -38,9 +38,11 @@
 }
 
 @media only screen and (max-width: 1025px) {
+  .guidelines-container img {
+    display: none;
+  }
+
   .guidelines-heading {
-    padding-top: 6vh;
-    padding-left: 5vh;
     font-size: 2.5rem;
     padding-bottom: 3vh;
   }
@@ -62,9 +64,37 @@
     padding: 0;
     font-size: 4rem !important;
   }
+}
+
+@media only screen and (max-width: 700px) {
+  .guidelines-container {
+    min-height: 95vh;
+  }
+  .guidelines-heading {
+    font-size: 2.5rem;
+    margin: 0 5vh 5vh 7vh;
+  }
   .points {
     width: 90%;
     padding-left: 5vh;
     font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .guidelines-container {
+    min-height: 90vh;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .guidelines-container {
+    min-height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .guidelines-container {
+    min-height: 130vh;
   }
 }

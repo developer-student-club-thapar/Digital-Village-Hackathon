@@ -33,6 +33,17 @@ const HeadingNav = styled.div`
   align-items: center;
   padding: 1.2rem 1rem 1rem 1rem;
   margin-bottom: 2.5rem;
+  @media (max-width: 540px) {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  "& h1" {
+    text-align: center;
+    margin: 0
+  }
+
+  }
 `;
 
 const HeadingTitle = styled.h1`
@@ -55,9 +66,21 @@ function ProblemStatements() {
   return (
     <>
       <Wrapper>
-        <HeadingNav>
-          <StyledImg src={grid} alt="" />
-          <h1 className="main-heading" data-content='ProblemStatement'>ProblemStatement</h1>
+        <HeadingNav id="problem">
+          {/* <StyledImg src={grid} alt="" /> */}
+          <h1
+            className="main-heading"
+            id="tabview"
+            data-content="ProblemStatement"
+          >
+            ProblemStatement
+          </h1>
+          <h1 className="main-heading" id="mobview" data-content="Problem">
+            Problem
+          </h1>
+          <h1 className="main-heading" id="mobview" data-content="Statement">
+            Statement
+          </h1>
         </HeadingNav>
         <StatementCard />
       </Wrapper>
