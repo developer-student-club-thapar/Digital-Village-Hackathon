@@ -15,6 +15,11 @@ const CardWrapper = styled.div`
   border-radius: 1rem;
   border: 3px solid #08bd04;
   cursor: pointer;
+  &:hover {
+    border: 2px solid #08bd04;
+    transform: scale(1.15);
+    transition: transform 0.5s ease-in-out;
+  }
 `;
 
 const CardContentWrapper = styled.div`

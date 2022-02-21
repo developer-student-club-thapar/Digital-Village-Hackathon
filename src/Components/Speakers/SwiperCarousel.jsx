@@ -158,7 +158,7 @@ function SwiperCarousel() {
     <SpeakersWrapper>
       <TitleDiv>
         <h1 className="main-heading" data-content="Speakers">
-          Speakers
+          Judges
         </h1>
       </TitleDiv>
       <CarouselDiv>
