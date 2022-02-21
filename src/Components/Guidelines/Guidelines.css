@@ -43,11 +43,12 @@
   }
 }
 
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 1400px) {
   .guidelines-container img {
     display: none;
   }
-
+}
+@media only screen and (max-width: 1025px) {
   .guidelines-heading {
     font-size: 2.5rem;
     padding-bottom: 3vh;

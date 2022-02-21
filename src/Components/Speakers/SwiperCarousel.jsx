@@ -5,6 +5,44 @@ import "swiper/css";
 import grid from "./dots.png";
 import styled from "@emotion/styled";
 
+const Speakers = [
+  {
+    key: 1,
+    name: "Shubhank Saxena",
+    des: "Backend@Wall | GSoC'21 | LFX Mentee'21 | KERNEL Fellow | xHabbit xLimeHealth| Former Research Intern @IIT Delhi,@IIIT Allahabad | MLH Fellow",
+    img: "https://media-exp1.licdn.com/dms/image/C5103AQGcHA2nfcn__Q/profile-displayphoto-shrink_800_800/0/1582627892247?e=1651104000&v=beta&t=Rg7YrbskaonOBtcHBYH5TUbP-CwuyrYxbnX7u2oK4_Q",
+  },
+  {
+    key: 2,
+    name: "Sai Siddartha Maram",
+    des: "Incoming UX Research Intern @Meta",
+    img: "https://media-exp1.licdn.com/dms/image/D5635AQHDqf3ZXQyFcg/profile-framedphoto-shrink_800_800/0/1643630714273?e=1645570800&v=beta&t=PvmqVVyMRbrtTG4yPns4LSRQB2VhVZY_IyZX-RYR9-M",
+  },
+  {
+    key: 3,
+    name: "Shubhank Saxena",
+    des: "Backend@Wall | GSoC'21 | LFX Mentee'21 | KERNEL Fellow | xHabbit xLimeHealth| Former Research Intern @IIT Delhi,@IIIT Allahabad | MLH Fellow",
+    img: "https://media-exp1.licdn.com/dms/image/C5103AQGcHA2nfcn__Q/profile-displayphoto-shrink_800_800/0/1582627892247?e=1651104000&v=beta&t=Rg7YrbskaonOBtcHBYH5TUbP-CwuyrYxbnX7u2oK4_Q",
+  },
+  {
+    key: 4,
+    name: "Sai Siddartha Maram",
+    des: "Incoming UX Research Intern @Meta",
+    img: "https://media-exp1.licdn.com/dms/image/D5635AQHDqf3ZXQyFcg/profile-framedphoto-shrink_800_800/0/1643630714273?e=1645570800&v=beta&t=PvmqVVyMRbrtTG4yPns4LSRQB2VhVZY_IyZX-RYR9-M",
+  },
+  {
+    key: 5,
+    name: "Shubhank Saxena",
+    des: "Backend@Wall | GSoC'21 | LFX Mentee'21 | KERNEL Fellow | xHabbit xLimeHealth| Former Research Intern @IIT Delhi,@IIIT Allahabad | MLH Fellow",
+    img: "https://media-exp1.licdn.com/dms/image/C5103AQGcHA2nfcn__Q/profile-displayphoto-shrink_800_800/0/1582627892247?e=1651104000&v=beta&t=Rg7YrbskaonOBtcHBYH5TUbP-CwuyrYxbnX7u2oK4_Q",
+  },
+  {
+    key: 6,
+    name: "Sai Siddartha Maram",
+    des: "Incoming UX Research Intern @Meta",
+    img: "https://media-exp1.licdn.com/dms/image/D5635AQHDqf3ZXQyFcg/profile-framedphoto-shrink_800_800/0/1643630714273?e=1645570800&v=beta&t=PvmqVVyMRbrtTG4yPns4LSRQB2VhVZY_IyZX-RYR9-M",
+  },
+];
 const SpeakersWrapper = styled.div`
   background-color: #072227;
   padding-bottom: 10vh;
@@ -154,23 +192,16 @@ function SwiperCarousel() {
           // onSlideChange={() => console.log("slide change")}
           // onSwiper={(swiper) => console.log(swiper)}
         >
-          {[1, 2, 3, 4, 5, 6].map((item) => (
-            <SwiperSlide key={item}>
+          {Speakers.map((speaker) => (
+            <SwiperSlide key={speaker.key}>
               <SpeakerCard>
                 <PictureDiv>
                   <GridImage src={grid} alt="" />
-                  <SpeakerImg
-                    src={"https://picsum.photos/400/300"}
-                    alt={"Speaker-1 image"}
-                  />
+                  <SpeakerImg src={speaker.img} alt={"Speaker image"} />
                 </PictureDiv>
                 <SpeakerBody>
-                  <SpeakerName>Speaker Name</SpeakerName>
-                  <SpeakerDes>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Morbi sed elit quam. Nulla rhoncus euismod dolor elementum
-                    eleifend.
-                  </SpeakerDes>
+                  <SpeakerName>{speaker.name}</SpeakerName>
+                  <SpeakerDes>{speaker.des}</SpeakerDes>
                 </SpeakerBody>
               </SpeakerCard>
             </SwiperSlide>
