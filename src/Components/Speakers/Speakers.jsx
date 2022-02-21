@@ -55,10 +55,11 @@ export default class Responsive extends Component {
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 1,
-      initialSlide: 0,
       arrows: false,
-      centerMode: true,
+      // centerMode: true,
+      draggable: true,
       swipe: true,
+      infinite: true,
       responsive: [
         {
           breakpoint: 1600,
@@ -92,7 +93,7 @@ export default class Responsive extends Component {
           </h1>
         </HeadingNav>
         {/* <div className="card-group"> */}
-        <Slider {...settings} style={{ margin: "0 5rem", padding: "2rem 0" }}>
+        <Slider {...settings} style={{ margin: "0 5rem", maxWidth: "80%" }}>
           <div className="card">
             <img
               src={"https://picsum.photos/400/300"}

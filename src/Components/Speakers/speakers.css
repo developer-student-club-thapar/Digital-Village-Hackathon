@@ -87,6 +87,6 @@
 }
 
 .slick-slide {
-  width: 500px !important;
+  min-width: 350px !important;
   margin: 0 15px;
 }
