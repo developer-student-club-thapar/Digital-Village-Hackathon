@@ -1,5 +1,6 @@
 import React from "react";
 import spn from "./img.png";
+import Sponsors from "../../data/sponsors.js";
 import styled from "@emotion/styled";
 
 const SponsorsWrapper = styled.div`
@@ -90,10 +91,7 @@ function SponsorsWrapperMain() {
         </TitleDiv>
       </SponsorHeading>
       <SponsorsCard>
-        {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, modi.
-        Laboriosam, facilis quisquam voluptas vel delectus pariatur quam error
-        expedita reprehenderit, cupiditate neque mollitia commodi exercitationem
-        similique! Quisquam, qui ab. */}
+        {/* {Sponsors.map((sponsor, index) => ())} */}
       </SponsorsCard>
     </SponsorsWrapper>
   );
