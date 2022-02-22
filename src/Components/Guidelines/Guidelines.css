@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
   position: relative;
-  padding-top: 2vh;
+  padding-top: 5vh;
   width: 100%;
   min-height: 80vh;
 }
@@ -12,7 +12,7 @@
   text-align: left;
   font-family: "Poppins", sans-serif;
   color: white;
-  margin: 0 5vh 1vh 10vh;
+  margin: 0 5vh 4vh 9vh;
   font-size: 4.7rem;
 }
 .guidelines {

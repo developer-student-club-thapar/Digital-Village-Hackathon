@@ -78,8 +78,8 @@ function ProblemStatements() {
           <h1 className="main-heading" id="mobview" data-content="Problem">
             Problem
           </h1>
-          <h1 className="main-heading" id="mobview" data-content="Statement">
-            Statement
+          <h1 className="main-heading" id="mobview" data-content="Statements">
+            Statements
           </h1>
         </HeadingNav>
         <StatementCard />

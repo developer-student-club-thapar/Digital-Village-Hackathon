@@ -7,15 +7,36 @@ import SwiperCarousel from "./Components/Speakers/SwiperCarousel";
 import ProblemStatements from "./Components/ProblemStatements/ProblemStatements";
 import SponsorsWrapperMain from "./Components/Sponsors/SponsorsWrapperMain";
 import Footer from "./Components/Footer/Footer";
+import styled from "@emotion/styled";
 import "./app.css";
+
+const WrapperDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+const Element = styled.div`
+  position: absolute;
+  top: 1000px;
+  left: 60px;
+  height: 68vh;
+  width: 450px;
+  background-color: #282a31;
+  z-index: 2;
+  @media (max-width: 1400px) {
+    display: none;
+  }
+`;
 
 function App() {
   return (
     <div className="App">
       <Landing />
-      <About />
-      <LogoSection />
-      <Guidelines />
+      <WrapperDiv>
+        <About />
+        <Element />
+        <LogoSection />
+        <Guidelines />
+      </WrapperDiv>
       <ProblemStatements />
       <SponsorsWrapperMain />
       {/* <Speakers /> */}
