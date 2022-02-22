@@ -1,5 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
+  background-color: black;
   overflow-x: hidden;
 }
 .main-heading:after {
@@ -23,6 +24,7 @@ body {
   font-size: 77.95px;
   line-height: 117px;
   text-align: left;
+  z-index: 10;
 }
 .sticky {
   position: fixed;

@@ -68,8 +68,13 @@ export default function Nav() {
         <img
           src={tel}
           alt=""
-          style={{ objectFit: "contain" }}
-          height="80px"
+          style={{
+            objectFit: "contain",
+            position: "relative",
+            top: "5px",
+            left: "15px",
+          }}
+          height="90px"
           width="140px"
         />
         {/* </a> */}
@@ -122,7 +127,12 @@ export default function Nav() {
         <img
           src={ti}
           alt=""
-          style={{ objectFit: "contain" }}
+          style={{
+            objectFit: "contain",
+            position: "relative",
+            top: "5px",
+            left: "15px",
+          }}
           height="80px"
           width="60px"
         />
