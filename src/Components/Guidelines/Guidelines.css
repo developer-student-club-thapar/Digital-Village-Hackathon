@@ -37,6 +37,12 @@
   right: 5%;
 }
 
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  /* margin: 0; */
+}
+
 @media only screen and (max-width: 1300px) {
   .guidelines-container {
     min-height: 90vh;

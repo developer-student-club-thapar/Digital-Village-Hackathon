@@ -16,7 +16,7 @@ const About = () => {
               <h2 className="main-heading" data-content="About">
                 About
               </h2>
-              <p>
+              <p style={{ paddingBottom: "1rem" }}>
                 Digital Village Hackathon is a national level initiative for
                 students to compete in solving pressing problems in the domain
                 of precision agriculture, under the project “Digital Village: A
