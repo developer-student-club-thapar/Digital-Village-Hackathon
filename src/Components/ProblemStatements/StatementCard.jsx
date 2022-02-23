@@ -17,8 +17,8 @@ const CardWrapper = styled.div`
   cursor: pointer;
   &:hover {
     border: 2px solid #08bd04;
-    transform: scale(1.15);
-    transition: transform 0.5s ease-in-out;
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
   }
 `;
 
@@ -44,10 +44,10 @@ const Title = styled.h5`
   color: white;
   font-size: 1rem;
   @media (max-width: 1200px) {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   @media (max-width: 950px) {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 `;
 
@@ -78,21 +78,42 @@ const DetailedView = styled.div`
   margin: 3rem;
   border-radius: 1rem;
   border: 3px solid #08bd04;
+  @media (max-width: 450px) {
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    border: 3px solid #08bd04;
+  }
+  @media (max-width: 800px) {
+    padding: 1rem 1rem 1rem 2rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    border: 3px solid #08bd04;
+  }
 `;
 
 const DetailedHeading = styled.h3`
   color: #08bd04;
   font-size: 1.5rem;
   padding: 1rem 0;
+  @media (max-width: 800px) {
+    font-size: 1.3rem;
+  }
 `;
 
 const DetailedSubHeadings = styled.h5`
   color: #08bd04;
   font-size: 1.3rem;
+  @media (max-width: 800px) {
+    font-size: 1rem;
+  }
 `;
 
 const DetailedSubText = styled.p`
   color: white;
+  @media (max-width: 800px) {
+    font-size: 0.9rem;
+  }
 `;
 
 const DetailedNav = styled.div`
@@ -104,6 +125,10 @@ const DetailedNav = styled.div`
 const BackButton = styled.img`
   height: 25px;
   cursor: pointer;
+`;
+
+const Description = styled.div`
+  padding: 1rem 0;
 `;
 
 function StatementCard() {
@@ -153,15 +178,15 @@ function StatementCard() {
           <DetailedHeading>{`Statement Number ${selectedStatement.id}`}</DetailedHeading>
         </DetailedNav>
         <DetailedHeading>{selectedStatement.title}</DetailedHeading>
-        <div>
+        <Description>
           <DetailedSubHeadings>Description:- </DetailedSubHeadings>
           <DetailedSubText>{selectedStatement.content.des}</DetailedSubText>
-        </div>
-        <div>
+        </Description>
+        <Description>
           <DetailedSubHeadings>Data:- </DetailedSubHeadings>
           <DetailedSubText>{selectedStatement.content.data}</DetailedSubText>
-        </div>
-        <div>
+        </Description>
+        <Description>
           <DetailedSubHeadings>Link:- </DetailedSubHeadings>
           {/* <a
                     herf={selectedStatement.content.link}
@@ -170,11 +195,11 @@ function StatementCard() {
                   > */}
           <DetailedSubText>{selectedStatement.content.link}</DetailedSubText>
           {/* </a> */}
-        </div>
-        <div>
+        </Description>
+        <Description>
           <DetailedSubHeadings>Evaluation:- </DetailedSubHeadings>
           <DetailedSubText>{selectedStatement.content.eval}</DetailedSubText>
-        </div>
+        </Description>
       </DetailedView>
     );
   }
