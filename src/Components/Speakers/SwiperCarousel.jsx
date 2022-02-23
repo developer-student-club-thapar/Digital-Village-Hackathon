@@ -129,7 +129,7 @@ function SwiperCarousel() {
           spaceBetween={40}
           slidesPerView={3}
           scrollbar={{ draggable: true }}
-          loop
+          // loop
           breakpoints={{
             320: {
               slidesPerView: 1,

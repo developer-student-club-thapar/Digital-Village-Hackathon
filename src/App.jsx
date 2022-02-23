@@ -33,7 +33,7 @@ function App() {
       <Landing />
       <WrapperDiv>
         <About />
-        <Element />
+        {/* <Element /> */}
         <LogoSection />
         <Guidelines />
       </WrapperDiv>
