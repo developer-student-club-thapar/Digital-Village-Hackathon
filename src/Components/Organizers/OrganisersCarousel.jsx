@@ -1,5 +1,4 @@
 import "swiper/css";
-import "./Organisers.css";
 import React from "react";
 import grid from "./dots.png";
 import styled from "@emotion/styled";
@@ -120,8 +119,8 @@ function OrganisersCarousel() {
   return (
     <OrganisersWrapper>
       <TitleDiv>
-        <h1 className="main-heading" data-content="Judges">
-          Judges
+        <h1 className="main-heading" data-content="Organisers">
+          Organisers
         </h1>
       </TitleDiv>
       <CarouselDiv>
@@ -164,7 +163,7 @@ function OrganisersCarousel() {
                 </PictureDiv>
                 <OrganiserBody>
                   <OrganiserName>{Organiser.name}</OrganiserName>
-                  <OrganiserDes>{Organiser.des}</OrganiserDes>
+                  {/* <OrganiserDes>{Organiser.des}</OrganiserDes> */}
                 </OrganiserBody>
               </OrganiserCard>
             </SwiperSlide>

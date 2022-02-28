@@ -4,7 +4,7 @@ import React from "react";
 import grid from "./dots.png";
 import styled from "@emotion/styled";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Speakers from "../../data/speakers.js";
+import Speakers from "./speakers.js";
 
 const SpeakersWrapper = styled.div`
   background-color: #072227;
