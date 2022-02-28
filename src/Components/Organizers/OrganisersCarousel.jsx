@@ -3,7 +3,7 @@ import React from "react";
 import grid from "./dots.png";
 import styled from "@emotion/styled";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Organisers from "./Organisers.js";
+import Organisers from "./organisers.js";
 
 const OrganisersWrapper = styled.div`
   background-color: #072227;
