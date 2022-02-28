@@ -52,7 +52,7 @@ const Landing = () => {
           className="apply-button"
           data-hackathon-slug="YOUR-HACKATHON-SLUG"
           data-button-theme="dark-inverted"
-          style={{ height: "44px", width: "312px" }}
+          style={{ height: "44px", width: "312px", overflow: "hidden" }}
         ></div>
       </div>
     </div>

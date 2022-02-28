@@ -12,6 +12,9 @@ const FooterWrapper = styled.div`
   color: white;
   display: flex;
   justify-content: space-between;
+  @media (max-width: 1400px) {
+    justify-content: center;
+  }
 `;
 const Title = styled.h1``;
 
@@ -21,14 +24,18 @@ const Icon = styled.img`
   padding: 1rem;
 `;
 
-const Address = styled.p``;
+const Logo = styled.p`
+  @media (max-width: 1400px) {
+    display: none;
+  }
+`;
 
 function Footer() {
   return (
     <FooterWrapper>
-      <div>
+      <Logo>
         <img src={dsc} alt="" height={80} />
-      </div>
+      </Logo>
       <div>
         <Title>Contact Us</Title>
         <IconsDiv>
