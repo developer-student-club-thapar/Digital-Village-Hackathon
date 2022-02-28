@@ -132,10 +132,8 @@ const Description = styled.div`
 `;
 
 function StatementCard({ scrollto }) {
-  console.log(scrollto);
   const scrollToTop = () => {
     scrollto.current.scrollIntoView();
-    console.log(scrollto);
   };
   const [selectedStatement, setSelectedStatement] = useState(null);
   const [showDetailedView, setShowDetailedView] = useState(false);
