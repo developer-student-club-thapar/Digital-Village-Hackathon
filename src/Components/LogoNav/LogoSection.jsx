@@ -4,11 +4,13 @@ import ti from "./assets/ti.png";
 import meity from "./assets/meity.png";
 import step from "./assets/step.png";
 import styled from "@emotion/styled";
+import dsc from "./assets/dsc.png";
+import { Col, Row } from "react-bootstrap";
 
 const LogoSectionWrapper = styled.div`
   display: none;
   background-color: #072227;
-  padding: 2rem 0;
+  padding: 0;
   @media (max-width: 1400px) {
     display: block;
   }
@@ -60,7 +62,9 @@ const StyledImg4 = styled.img`
   position: relative;
   top: 2px;
 `;
-
+const StyledImgDsc = styled.img`
+width: 100%;
+`;
 function LogoSection() {
   return (
     <LogoSectionWrapper>
@@ -69,62 +73,19 @@ function LogoSection() {
           Collaborators
         </h2>
       </TitleDiv>
-      <LogoDiv>
-        <Logo>
-          {/* <a href="#"> */}
-          <StyledImg1
-            src={tel}
-            alt=""
-            style={{ objectFit: "contain" }}
-            // height="80px"
-            // width="140px"
-          />
-          {/* </a> */}
-        </Logo>
-        <Logo>
-          {/* <a href="#"> */}
-          <StyledImg2
-            src={meity}
-            style={{
-              objectFit: "contain",
-              transform: "scale(1.5)",
-              position: "relative",
-              bottom: "45px",
-            }}
-            alt=""
-            // height="200px"
-            // width="200px"
-          />
-          {/* </a> */}
-        </Logo>
-        <Logo>
-          {/* <a> */}
-          <StyledImg3
-            src={step}
-            style={{
-              objectFit: "contain",
-              transform: "scale(1.5)",
-              position: "relative",
-              bottom: "45px",
-            }}
-            alt=""
-            // height="200px"
-            // width="200px"
-          />
-          {/* </a> */}
-        </Logo>
-        <Logo>
-          {/* <a href="#"> */}
-          <StyledImg4
-            src={ti}
-            alt=""
-            style={{ objectFit: "contain" }}
-            // height="80px"
-            // width="60px"
-          />
-          {/* </a> */}
-        </Logo>
-      </LogoDiv>
+
+     <div className="collaborator-logo-div">
+      <Row>
+        <Col md={7}><img src={dsc}/></Col>
+        <Col md={5}><img src={tel}/></Col>
+      </Row>
+      <Row>
+        <Col md={4}><img src={meity}/></Col>
+        <Col md={4}><img src={step}/></Col>
+        <Col md={4}><img src={ti}/></Col>
+      </Row>
+      </div>
+
     </LogoSectionWrapper>
   );
 }
