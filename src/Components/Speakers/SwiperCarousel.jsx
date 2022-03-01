@@ -121,7 +121,7 @@ const TitleDiv = styled.div`
 
 function SwiperCarousel() {
   return (
-    <SpeakersWrapper>
+    <SpeakersWrapper id="judges">
       <TitleDiv>
         <h1 className="main-heading" data-content="Judges">
           Judges

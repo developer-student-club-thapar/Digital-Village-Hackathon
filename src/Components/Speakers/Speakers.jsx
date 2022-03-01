@@ -85,7 +85,7 @@ export default class Responsive extends Component {
       ],
     };
     return (
-      <div className="speakers" id="speakers">
+      <div className="speakers">
         <HeadingNav>
           {/* <StyledImg src={grid} alt="" /> */}
           <h1 className="main-heading" data-content="Speakers">
