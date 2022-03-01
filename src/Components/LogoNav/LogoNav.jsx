@@ -95,7 +95,7 @@ export default function Nav() {
         />
         {/* </a> */}
       </LogoDiv>
-      <DSCLogo className="nav-item">
+      <LogoDiv className="nav-item">
         {/* <a href="#"> */}
         <Dsclog
           src={dsc}
@@ -105,7 +105,7 @@ export default function Nav() {
           width="530px"
         />
         {/* </a> */}
-      </DSCLogo>
+      </LogoDiv>
       <LogoDiv className="nav-item">
         {/* <a> */}
         <img

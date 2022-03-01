@@ -40,6 +40,9 @@ body {
   .main-heading {
     font-size: 55px !important ;
   }
+  .collaborator-logo-div .row:nth-child(1) .col-md-7{
+    margin-bottom: 10%;
+  }
 }
 
 @media (max-width: 540px) {
@@ -75,3 +78,38 @@ body {
 .sponsors-div .row h2{
   margin-bottom: 10vh;
 } 
+.collaborator-logo-div{
+  margin: auto;
+  width: 100%;
+}
+.collaborator-logo-div img{
+  width: 25vw;
+}
+.collaborator-logo-div .row{
+  width: 100%;
+  padding: 5% 2%; 
+  text-align: center;
+}
+.collaborator-logo-div .row:nth-child(1) .col-md-7{
+  text-align: right;
+}
+.collaborator-logo-div .row:nth-child(1) .col-md-7 img{
+  width: 100%;
+  padding-top: 7.5%;
+}
+.collaborator-logo-div .row:nth-child(1) .col-md-5 img{
+  width: 50%;
+  margin: auto;
+  padding-top: 5%;
+}
+.collaborator-logo-div .row:nth-child(2) .col-md-4:nth-child(1) img{
+  width: 100%;;
+}
+.collaborator-logo-div .row:nth-child(2) .col-md-4:nth-child(2) img{
+  width: 100%;;
+}
+.collaborator-logo-div .row:nth-child(2) .col-md-4:nth-child(3) img{
+  height: 50%;
+  width: 30%;
+  margin-top: 15%;
+}
