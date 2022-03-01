@@ -51,7 +51,7 @@ const Landing = () => {
         </button> */}
         <div
           className="apply-button"
-          data-hackathon-slug="YOUR-HACKATHON-SLUG"
+          data-hackathon-slug="digital-village-hackathon"
           data-button-theme="dark-inverted"
           style={{ height: "44px", width: "312px", overflow: "hidden" }}
         ></div>
