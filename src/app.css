@@ -56,3 +56,22 @@ body {
     top: -35px;
   }
 }
+
+.sponsors-div{
+  width: 80%;
+  text-align: center;
+  color: white;
+  margin: auto;
+}
+.sponsors-div .row{
+  width: 100%;
+}
+.sponsors-div .row:nth-child(1) img{
+  width: 25vw;
+}
+.sponsors-div .row:nth-child(2) img{
+  width: 17vw;
+}
+.sponsors-div .row h2{
+  margin-bottom: 10vh;
+} 
