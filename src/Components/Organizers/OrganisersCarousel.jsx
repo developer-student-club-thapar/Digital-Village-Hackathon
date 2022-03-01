@@ -120,7 +120,7 @@ const TitleDiv = styled.div`
 
 function OrganisersCarousel() {
   return (
-    <OrganisersWrapper>
+    <OrganisersWrapper id="organisers">
       <TitleDiv>
         <h1 className="main-heading" data-content="Organisers">
           Organisers

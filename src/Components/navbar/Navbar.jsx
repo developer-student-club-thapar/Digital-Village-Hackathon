@@ -35,7 +35,8 @@ const Navbar1 = () => {
       <a href="#guidelines">Guidelines</a>
       <a href="#problem">Problem Statements</a>
       <a href="#sponsors">Sponsors</a>
-      <a href="#speakers">Speakers</a>
+      <a href="#organisers">Organisers</a>
+      <a href="#judges">Judges</a>
       {/* <span className="navbar-chips">
         <a href="#guidelines">Prizes</a>
       </span> */}
