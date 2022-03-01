@@ -2,6 +2,8 @@ import React from "react";
 import spn from "./img.png";
 import Sponsors from "../../data/sponsors.js";
 import styled from "@emotion/styled";
+import { Row, Col } from "react-bootstrap";
+import devfolio from "../../images/"
 
 const SponsorsWrapper = styled.div`
   background-color: black;
@@ -90,9 +92,11 @@ function SponsorsWrapperMain() {
           </h1>
         </TitleDiv>
       </SponsorHeading>
-      <SponsorsCard>
-        {/* {Sponsors.map((sponsor, index) => ())} */}
-      </SponsorsCard>
+      {/* <Row>
+        <h2>Title Sponsors</h2>
+        <Col><img src={}/></Col>
+        <Col><img src={}/></Col>
+      </Row> */}
     </SponsorsWrapper>
   );
 }
