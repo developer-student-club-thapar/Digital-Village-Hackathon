@@ -65,8 +65,8 @@ function LogoSection() {
   return (
     <LogoSectionWrapper>
       <TitleDiv>
-        <h2 className="main-heading" data-content="Organisers">
-          Organisers
+        <h2 className="main-heading" data-content="Collaborators">
+          Collaborators
         </h2>
       </TitleDiv>
       <LogoDiv>

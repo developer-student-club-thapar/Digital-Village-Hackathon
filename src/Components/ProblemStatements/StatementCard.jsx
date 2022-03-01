@@ -131,12 +131,15 @@ const Description = styled.div`
   padding: 1rem 0;
 `;
 
-function StatementCard() {
+function StatementCard({ scrollto }) {
+  const scrollToTop = () => {
+    scrollto.current.scrollIntoView();
+  };
   const [selectedStatement, setSelectedStatement] = useState(null);
   const [showDetailedView, setShowDetailedView] = useState(false);
   if (!showDetailedView) {
     return (
-      <StatementsWrapper>
+      <StatementsWrapper onClick={scrollToTop}>
         {selectedStatements.map((statement, index) => (
           <CardWrapper
             key={index}

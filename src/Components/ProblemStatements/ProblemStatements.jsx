@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import grid from "./assets/grid.svg";
 import StatementCard from "./StatementCard.jsx";
 import styled from "@emotion/styled";
@@ -63,10 +63,12 @@ const HeadingTitle = styled.h1`
 `;
 
 function ProblemStatements() {
+  const topView = useRef(null);
+
   return (
     <>
       <Wrapper>
-        <HeadingNav id="problem">
+        <HeadingNav id="problem" ref={topView}>
           {/* <StyledImg src={grid} alt="" /> */}
           <h1
             className="main-heading"
@@ -82,7 +84,7 @@ function ProblemStatements() {
             Statements
           </h1>
         </HeadingNav>
-        <StatementCard />
+        <StatementCard scrollto={topView} />
       </Wrapper>
     </>
   );
