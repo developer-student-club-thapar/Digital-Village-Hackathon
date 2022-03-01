@@ -1,9 +1,9 @@
 import React from "react";
-import tel from "./assets/tel_aviv.png";
-import dsc from "./assets/dsc.png";
+import tel from "./assets/tel_aviv2.png";
+import dsc from "./assets/dsc2.png";
 import ti from "./assets/ti.png";
-import meity from "./assets/meity.png";
-import step from "./assets/step.png";
+import meity from "./assets/meity2.png";
+import step from "./assets/step2.png";
 import styled from "@emotion/styled";
 
 const NavDiv = styled.div`
@@ -35,19 +35,19 @@ const DSCLogo = styled.div`
   transform: translateX(-50px);
   @media (max-width: 1400px) {
     width: 100%;
-    margin: 0 0 10vh 2rem;
+    margin: 0 0 3vh 2rem;
   }
   @media (max-width: 350px) {
     width: 280px;
     position: relative;
     // left: 60px;
-    margin: 0 0 10vh 0;
+    margin: 0 0 3vh 0;
   }
   @media (max-width: 450px) {
     width: 100%;
     position: relative;
     left: 60px;
-    margin: 0 0 10vh 0;
+    margin: 0 0 3vh 0;
   }
 `;
 
@@ -85,12 +85,12 @@ export default function Nav() {
           src={meity}
           style={{
             objectFit: "contain",
-            transform: "scale(1.5)",
+            transform: "scale(1)",
             position: "relative",
-            bottom: "45px",
+            bottom: "0px",
           }}
           alt=""
-          height="200px"
+          height="100px"
           width="200px"
         />
         {/* </a> */}
@@ -112,12 +112,12 @@ export default function Nav() {
           src={step}
           style={{
             objectFit: "contain",
-            transform: "scale(1.5)",
+            transform: "scale(1)",
             position: "relative",
-            bottom: "45px",
+            bottom: "0px",
           }}
           alt=""
-          height="200px"
+          height="100px"
           width="200px"
         />
         {/* </a> */}
