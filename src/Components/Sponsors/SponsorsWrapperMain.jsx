@@ -3,7 +3,11 @@ import spn from "./img.png";
 import Sponsors from "../../data/sponsors.js";
 import styled from "@emotion/styled";
 import { Row, Col } from "react-bootstrap";
-import devfolio from "../../images/"
+import devfolio from "../../images/devfolio.png";
+import polygon from "../../images/polygon.png";
+import tezos from "../../images/tezos.png";
+import celo from "../../images/celo.png";
+import filecoin from "../../images/filecoin.png"
 
 const SponsorsWrapper = styled.div`
   background-color: black;
@@ -92,11 +96,19 @@ function SponsorsWrapperMain() {
           </h1>
         </TitleDiv>
       </SponsorHeading>
-      {/* <Row>
-        <h2>Title Sponsors</h2>
-        <Col><img src={}/></Col>
-        <Col><img src={}/></Col>
-      </Row> */}
+      <div className="sponsors-div">
+      <Row>
+        <h2 className="main-heading" data-content="Title Sponsors">Title Sponsors</h2>
+        <Col><img src={devfolio}/></Col>
+        <Col><img src={polygon}/></Col>
+      </Row>
+      <Row>
+        <h2 className="main-heading" data-content="Power Sponsors">Power Sponsors</h2>
+        <Col><img src={tezos}/></Col>
+        <Col><img src={celo}/></Col>
+        <Col><img src={filecoin}/></Col>
+      </Row>
+      </div>
     </SponsorsWrapper>
   );
 }
