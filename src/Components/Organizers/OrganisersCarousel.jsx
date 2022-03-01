@@ -1,7 +1,10 @@
 import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 import React from "react";
 import grid from "./dots.png";
 import styled from "@emotion/styled";
+import { Autoplay, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Organisers from "./organisers.js";
 
@@ -128,6 +131,13 @@ function OrganisersCarousel() {
           spaceBetween={40}
           slidesPerView={3}
           scrollbar={{ draggable: true }}
+          navigation={true}
+          pagination={{ clickable: true }}
+          modules={[Autoplay, Navigation, Pagination]}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
           // loop
           breakpoints={{
             320: {

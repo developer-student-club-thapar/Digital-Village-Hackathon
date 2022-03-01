@@ -1,9 +1,12 @@
 import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 import "./speakers.css";
 import React from "react";
 import grid from "./dots.png";
 import styled from "@emotion/styled";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation, Pagination } from "swiper";
 import Speakers from "./speakers.js";
 
 const SpeakersWrapper = styled.div`
@@ -129,6 +132,13 @@ function SwiperCarousel() {
           spaceBetween={40}
           slidesPerView={3}
           scrollbar={{ draggable: true }}
+          pagination={{ clickable: true }}
+          navigation={true}
+          modules={[Autoplay, Navigation, Pagination]}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
           // loop
           breakpoints={{
             320: {
