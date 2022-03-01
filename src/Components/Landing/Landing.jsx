@@ -16,11 +16,12 @@ const Landing = () => {
   return (
     <div className="landing" id="home">
       <LogoNav />
-      <h1>DIGITAL VILLAGE </h1>
-      <h1>HACKATHON</h1>
-      <h4> 19th March 2022 - 20th March 2022</h4>
-      <div className="buttons">
-        {/* <button>Register</button> <button>Submit</button> */}
+      <div className="landing-content">
+        <h1>DIGITAL VILLAGE </h1>
+        <h1>HACKATHON</h1>
+        <h4> 19th March 2022 - 20th March 2022</h4>
+        <div className="buttons">
+          {/* <button>Register</button> <button>Submit</button> */}
         {/* <button
           onClick={() => {
             window.location.href =
@@ -54,6 +55,7 @@ const Landing = () => {
           data-button-theme="dark-inverted"
           style={{ height: "44px", width: "312px", overflow: "hidden" }}
         ></div>
+        </div>
       </div>
     </div>
   );
