@@ -11,7 +11,7 @@ export default [
   {
     key: 2,
     name: "Mr. Rahul Sharma",
-    des: "Incoming UX Research Intern @Meta",
+    des: "CEO @TIDE_STEP",
     img: rahul,
   },
   // {
