@@ -17,7 +17,7 @@ const About = () => {
                 About
               </h2>
               <p style={{ paddingBottom: "1rem" }}>
-                Digital Village Hackathon is a national level initiative for
+                Digital Village Hackathon is an international level initiative for
                 students to compete in solving pressing problems in the domain
                 of precision agriculture, under the project “Digital Village: A
                 Data-Driven Approach to Precision Agriculture in Small Farms”.
