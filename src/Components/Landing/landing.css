@@ -30,6 +30,10 @@
   background-color: transparent;
   margin-top: 0;
 }
+.landing p{
+  color: white;
+  font-weight: 600;
+}
 .landing h1:nth-child(3) {
   padding-top: 22vh;
   margin-bottom: 0;
@@ -47,7 +51,7 @@
   background-color: transparent;
 
   text-align: center;
-  padding-bottom: 10vh;
+  padding-bottom: 30px;
   color: #ffffff;
 }
 .landing button {
