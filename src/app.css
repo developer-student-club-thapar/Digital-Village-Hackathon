@@ -60,13 +60,13 @@ body {
   }
 }
 
-.sponsors-div{
+.sponsors-div, .prizes-div{
   width: 80%;
   text-align: center;
   color: white;
   margin: auto;
 }
-.sponsors-div .row{
+.sponsors-div .row, .prizes-div .row{
   width: 100%;
 }
 .sponsors-div .row:nth-child(1) img{
@@ -75,6 +75,14 @@ body {
 .sponsors-div .row:nth-child(2) img{
   width: 17vw;
 }
+.top-prizes{
+  padding-top: 100px;
+}
+.top-prizes #first{
+  position: relative;
+  top: -100px;
+}
+
 .sponsors-div .row h2{
   margin-bottom: 10vh;
 } 
