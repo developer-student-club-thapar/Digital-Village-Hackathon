@@ -78,9 +78,23 @@ body {
 .top-prizes{
   padding-top: 100px;
 }
-.top-prizes #first{
-  position: relative;
-  top: -100px;
+@media (min-width: 768px)
+{
+  .top-prizes #first{
+    position: relative;
+    top: -100px;
+  }
+}
+@media (max-width: 768px)
+{
+  .top-prizes #first{
+    position: relative;
+    top: -100%;
+  }
+  .top-prizes #second{
+    position: relative;
+    bottom: -100%;
+  }
 }
 
 .sponsors-div .row h2{
