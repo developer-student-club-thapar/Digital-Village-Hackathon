@@ -17,14 +17,17 @@ const Landing = () => {
     <div className="landing" id="home">
       <LogoNav />
       <div className="landing-content">
-        <p> 
-          AN INTERNATIONAL LEVEL INITIATIVE
-        </p>
+        <div className="ribbon ribbon-top-left">
+          <span>
+            Prices Worth <br /> 1.5 lac
+          </span>
+        </div>
+        <p>  AN INTERNATIONAL LEVEL INITIATIVE</p>
         <h1>DIGITAL VILLAGE HACKATHON</h1>
         <h4> 19th March 2022 - 20th March 2022</h4>
         <div className="buttons">
           {/* <button>Register</button> <button>Submit</button> */}
-        {/* <button
+          {/* <button
           onClick={() => {
             window.location.href =
               "https://www.notion.so/Apply-with-Devfolio-Integration-Guide-183c6fb761c142efadfae129862d0a8c";
@@ -51,12 +54,12 @@ const Landing = () => {
           </svg>
           {"  "}Go To Dashboard
         </button> */}
-        <div
-          className="apply-button"
-          data-hackathon-slug="digital-village-hackathon"
-          data-button-theme="dark-inverted"
-          style={{ height: "44px", width: "312px", overflow: "hidden" }}
-        ></div>
+          <div
+            className="apply-button"
+            data-hackathon-slug="digital-village-hackathon"
+            data-button-theme="dark-inverted"
+            style={{ height: "44px", width: "312px", overflow: "hidden" }}
+          ></div>
         </div>
       </div>
     </div>

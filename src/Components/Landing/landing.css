@@ -10,14 +10,14 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-.landing-content
-{
+.landing-content {
   background-color: rgba(144, 59, 3, 0.863);
   box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.623);
   border-radius: 8px;
   width: 80%;
   margin: 0 auto;
-  padding: 30px 20px;
+  /* padding: 30px 20px; */
+  padding: 2.5rem 1rem 6rem 1rem;
   margin-top: 20px;
 }
 .landing h1 {
@@ -30,12 +30,12 @@
   background-color: transparent;
   margin-top: 0;
 }
-.landing p{
+.landing p {
   color: white;
   font-weight: 600;
 }
 .landing h1:nth-child(3) {
-  padding-top: 22vh;
+  padding-top: 5vh;
   margin-bottom: 0;
 }
 .landing h1:nth-child(1) {
@@ -90,9 +90,9 @@
     font-size: 2rem;
   }
 
-  .landing h1:nth-child(3) {
+  /* .landing h1:nth-child(3) {
     margin-top: 10rem;
-  }
+  } */
 
   .landing .buttons {
     display: flex;
@@ -113,9 +113,9 @@
     font-size: 1.5rem;
   }
 
-  .landing h1:nth-child(3) {
+  /* .landing h1:nth-child(3) {
     margin-top: 12rem;
-  }
+  } */
 
   .landing .buttons {
     display: flex;
@@ -132,9 +132,9 @@
   .landing h1 {
     font-size: 3rem;
   }
-  .landing h1:nth-child(3) {
+  /* .landing h1:nth-child(3) {
     margin-top: 12rem;
-  }
+  } */
   .landing h4 {
     font-size: 1rem;
   }
@@ -153,9 +153,9 @@
   .landing h1 {
     font-size: 2rem;
   }
-  .landing h1:nth-child(3) {
+  /* .landing h1:nth-child(3) {
     margin-top: 10rem;
-  }
+  } */
   .landing h4 {
     font-size: 0.9rem;
   }
@@ -168,4 +168,62 @@
     font-size: 0.7rem;
     /* width: 100%; */
   }
+}
+/* Ribbon css */
+
+@media (max-width: 1400px) {
+  .ribbon {
+    top: 6.8vh !important;
+  }
+}
+
+.ribbon {
+  width: 260px;
+  height: 150px;
+  overflow: hidden;
+  position: absolute;
+  top: 16.5vh;
+  left: 9.5vw;
+}
+.ribbon::before,
+.ribbon::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  display: block;
+  border: 5px solid #2980b9;
+}
+.ribbon span {
+  position: absolute;
+  display: block;
+  width: 400px;
+  /* height: 100px; */
+  padding: 15px 0;
+  background-color: #98613a;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font: 700 18px/1 "Lato", sans-serif;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* top left*/
+.ribbon-top-left::before,
+.ribbon-top-left::after {
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+.ribbon-top-left::before {
+  top: 0;
+  right: 0;
+}
+.ribbon-top-left::after {
+  bottom: 0;
+  left: 0;
+}
+.ribbon-top-left span {
+  right: 0px;
+  top: 37px;
+  transform: rotate(-35deg) translateX(15px);
 }

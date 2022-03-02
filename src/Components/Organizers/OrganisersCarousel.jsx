@@ -16,6 +16,15 @@ const OrganisersWrapper = styled.div`
 const CarouselDiv = styled.div`
   margin: 0 5rem;
   width: 90%;
+  & .swiper-button-next {
+    color: #08bd04;
+  }
+  & .swiper-button-prev {
+    color: #08bd04;
+  }
+  .swiper-pagination-bullet-active {
+    background: #08bd04 !important;
+  }
   @media (max-width: 1400px) {
     margin: 0 4rem;
   }
@@ -138,7 +147,7 @@ function OrganisersCarousel() {
             delay: 2500,
             disableOnInteraction: false,
           }}
-          // loop
+          loop
           breakpoints={{
             320: {
               slidesPerView: 1,
