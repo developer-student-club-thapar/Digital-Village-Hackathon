@@ -108,7 +108,7 @@ function Prizes() {
       <div className="prizes-div">
         <Row className="top-prizes">
         <Col md={4}>
-            <PrizesCard classname= "prize-card">
+            <PrizesCard classname= "prize-card" id="second">
                 <Img
                 src={second}
                 />
