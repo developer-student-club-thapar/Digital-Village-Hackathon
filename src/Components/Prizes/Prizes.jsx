@@ -79,9 +79,9 @@ const PrizeAmt = styled.h2`
 `;
 
 const PrizeDesc = styled.p`
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     text-align: center;
-    margin: 15px auto;
+    margin: 0px auto;
 `;
 
 const PrizeTitle = styled.h3`
@@ -158,42 +158,66 @@ function Prizes() {
           </h2>
           <Col md={6}>
             <PrizesCard classname= "prize-card">
-            <Img
-              src={polygon}
-              onClick={() => {
-                window.location.href = "https://polygon.technology/";
-              }}
-            />
+                <Img
+                src={polygon}
+                onClick={() => {
+                    window.location.href = "https://polygon.technology/";
+                }}
+                />
+                <PrizeAmt>
+                    Rs. 15,000
+                </PrizeAmt>
+                <PrizeDesc>
+                    Prize for best hack built on Polygon
+                </PrizeDesc>
             </PrizesCard>
           </Col>
           <Col md={6}>
             <PrizesCard classname= "prize-card">
-            <Img
-              src={tezos}
-              onClick={() => {
-                window.location.href = "https://devfolio.co";
-              }}
-            />
+                <Img
+                src={tezos}
+                onClick={() => {
+                    window.location.href = "https://devfolio.co";
+                }}
+                />
+                <PrizeAmt>
+                    Rs. 20,000
+                </PrizeAmt>
+                <PrizeDesc>
+                    Prize for best Dapp built on Tezos
+                </PrizeDesc>
             </PrizesCard>
           </Col>
           <Col md={6}>
             <PrizesCard classname= "prize-card">
-            <Img
-              src={celo}
-              onClick={() => {
-                window.location.href = "https://polygon.technology/";
-              }}
-            />
+                <Img
+                src={celo}
+                onClick={() => {
+                    window.location.href = "https://polygon.technology/";
+                }}
+                />
+                <PrizeAmt>
+                    Rs. 20,000
+                </PrizeAmt>
+                <PrizeDesc>
+                    Prize for best Dapp built on Celo
+                </PrizeDesc>
             </PrizesCard>
           </Col>
           <Col md={6}>
             <PrizesCard classname= "prize-card">
-            <Img
-              src={filecoin}
-              onClick={() => {
-                window.location.href = "https://polygon.technology/";
-              }}
-            />
+                <Img
+                src={filecoin}
+                onClick={() => {
+                    window.location.href = "https://polygon.technology/";
+                }}
+                />
+                <PrizeAmt>
+                    Rs. 20,000
+                </PrizeAmt>
+                <PrizeDesc>
+                    Prize for best use of IPFS and/or Filecoin
+                </PrizeDesc>
             </PrizesCard>
           </Col>
         </Row>
