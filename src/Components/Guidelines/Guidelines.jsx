@@ -17,9 +17,10 @@ export default function Guidelines() {
           <ul>
             <li>
               <p>
-                The hackathon is going to be conducted online and is open to
-                students of all colleges/universities across India and Tel Aviv
-                University.
+                The hackathon is going to be conducted online and offline mode
+                is open to students of Thapar Institute of Engineering and
+                Technology, Patiala; Tel Aviv University, Tel Aviv, Israel and
+                Universities/Colleges across the globe.
               </p>
             </li>
             <li>

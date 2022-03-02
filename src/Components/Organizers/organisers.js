@@ -19,15 +19,15 @@ export default [
   },
   {
     key: 2,
-    name: "Dr. Prateek Bhatia",
+    name: "Prof. Moushumi Ghosh",
     des: "Incoming UX Research Intern @Meta",
-    img: prateek,
+    img: mghosh,
   },
   {
     key: 3,
-    name: "Dr. Harpreet Singh",
-    des: "Backend@Wall | GSoC'21 | LFX Mentee'21 | KERNEL Fellow | xHabbit xLimeHealth| Former Research Intern @IIT Delhi,@IIIT Allahabad | MLH Fellow",
-    img: harpreet,
+    name: "Dr. Parteek Bhatia",
+    des: "Incoming UX Research Intern @Meta",
+    img: prateek,
   },
   {
     key: 4,
@@ -37,21 +37,21 @@ export default [
   },
   {
     key: 5,
-    name: "Dr. Mandeep Singh",
-    des: "Backend@Wall | GSoC'21 | LFX Mentee'21 | KERNEL Fellow | xHabbit xLimeHealth| Former Research Intern @IIT Delhi,@IIIT Allahabad | MLH Fellow",
-    img: mandeep,
-  },
-  {
-    key: 6,
     name: "Dr. Amit Mishra",
     des: "Incoming UX Research Intern @Meta",
     img: amit,
   },
   {
+    key: 6,
+    name: "Dr. Harpreet Singh",
+    des: "Backend@Wall | GSoC'21 | LFX Mentee'21 | KERNEL Fellow | xHabbit xLimeHealth| Former Research Intern @IIT Delhi,@IIIT Allahabad | MLH Fellow",
+    img: harpreet,
+  },
+  {
     key: 7,
-    name: "Dr. Moushumi Ghosh",
-    des: "Incoming UX Research Intern @Meta",
-    img: mghosh,
+    name: "Dr. Mandeep Singh",
+    des: "Backend@Wall | GSoC'21 | LFX Mentee'21 | KERNEL Fellow | xHabbit xLimeHealth| Former Research Intern @IIT Delhi,@IIIT Allahabad | MLH Fellow",
+    img: mandeep,
   },
   {
     key: 8,
