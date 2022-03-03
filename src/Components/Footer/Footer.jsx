@@ -16,7 +16,9 @@ const FooterWrapper = styled.div`
     justify-content: center;
   }
 `;
-const Title = styled.h1``;
+const Title = styled.h1`
+  text-align: center;
+`;
 
 const IconsDiv = styled.div``;
 

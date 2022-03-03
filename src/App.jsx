@@ -10,6 +10,8 @@ import SponsorsWrapperMain from "./Components/Sponsors/SponsorsWrapperMain";
 import Prizes from "./Components/Prizes/Prizes";
 import Footer from "./Components/Footer/Footer";
 import styled from "@emotion/styled";
+import Sidenav from "./Components/navbar/SideNav";
+
 import "./app.css";
 import Timeline from "./Components/Timeline/Timeline";
 
@@ -33,6 +35,7 @@ const Element = styled.div`
 function App() {
   return (
     <div className="App">
+      <Sidenav />
       <Landing />
       <WrapperDiv>
         <About />

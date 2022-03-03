@@ -6,7 +6,7 @@ const About = () => {
   return (
     <Fragment>
       <div className="row" id="about">
-        <Navbar />
+        {/* <Navbar /> */}
         <div className="about-main-wrapper">
           <div className="col-sm-4">
             <img src={abot} className="about-content-img" />
