@@ -11,6 +11,7 @@ import Prizes from "./Components/Prizes/Prizes";
 import Footer from "./Components/Footer/Footer";
 import styled from "@emotion/styled";
 import "./app.css";
+import Timeline from "./Components/Timeline/Timeline";
 
 const WrapperDiv = styled.div`
   display: flex;
@@ -38,6 +39,7 @@ function App() {
         {/* <Element /> */}
         <LogoSection />
         <Guidelines />
+        <Timeline />
       </WrapperDiv>
       <ProblemStatements />
       <SponsorsWrapperMain />
