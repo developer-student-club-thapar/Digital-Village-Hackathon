@@ -17,11 +17,11 @@ const Landing = () => {
     <div className="landing" id="home">
       <LogoNav />
       <div className="landing-content">
-        <div className="ribbon ribbon-top-left">
+        {/* <div className="ribbon ribbon-top-left">
           <span>
             Prices Worth <br /> 1.5 lac
           </span>
-        </div>
+        </div> */}
         <p>  AN INTERNATIONAL LEVEL INITIATIVE</p>
         <h1>DIGITAL VILLAGE HACKATHON</h1>
         <h4> 19th March 2022 - 20th March 2022</h4>

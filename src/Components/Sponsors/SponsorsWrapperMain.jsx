@@ -8,6 +8,7 @@ import polygon from "../../images/polygon.png";
 import tezos from "../../images/tezos.png";
 import celo from "../../images/celo.png";
 import filecoin from "../../images/filecoin.png";
+import "./sponsors.css";
 
 const SponsorsWrapper = styled.div`
   background-color: black;
@@ -102,7 +103,7 @@ function SponsorsWrapperMain() {
       </SponsorHeading>
       <div className="sponsors-div">
         <Row>
-          <h2 className="main-heading" data-content="Title Sponsors">
+          <h2 className="spHeading main-heading" data-content="Title Sponsors">
             Title Sponsors
           </h2>
           <Col>
@@ -123,7 +124,7 @@ function SponsorsWrapperMain() {
           </Col>
         </Row>
         <Row>
-          <h2 className="main-heading" data-content="Power Sponsors">
+          <h2 className="spHeading main-heading " data-content="Power Sponsors">
             Power Sponsors
           </h2>
           <Col>
