@@ -73,82 +73,64 @@ const Img = styled.img`
 `;
 
 const PrizeAmt = styled.h2`
-    margin: 50px auto;
-    font-weight: 700;
-    font-size: 2.5rem;
+  margin: 50px auto;
+  font-weight: 700;
+  font-size: 2.5rem;
 `;
 
 const PrizeDesc = styled.p`
-    font-size: 1.3rem;
-    text-align: center;
-    margin: 0px auto;
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 0px auto;
 `;
 
 const PrizeTitle = styled.h3`
-    font-size: 1.8rem;
-    font-weight: 600;
-    text-align: center;
-    margin: 0px auto;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0px auto;
 `;
-
 
 function Prizes() {
   return (
-    <PrizesWrapper id="sponsors">
+    <PrizesWrapper id="prizes">
       <PrizesHeading>
         <TitleDiv>
-          <h1
-            className="main-heading"
-            data-content="Prizes"
-          >
+          <h1 className="main-heading" data-content="Prizes">
             Prizes
           </h1>
         </TitleDiv>
       </PrizesHeading>
       <div className="prizes-div">
         <Row className="top-prizes">
-        <Col md={4}>
-            <PrizesCard classname= "prize-card" id="second">
-                <Img
-                src={second}
-                />
-                <PrizeAmt>Rs. 20,000</PrizeAmt>
+          <Col md={4}>
+            <PrizesCard classname="prize-card" id="second">
+              <Img src={second} />
+              <PrizeAmt>Rs. 20,000</PrizeAmt>
             </PrizesCard>
           </Col>
           <Col md={4}>
-            <PrizesCard classname= "prize-card" id="first">
-                <Img
-                src={first}
-                />
-                <PrizeAmt>Rs. 30,000</PrizeAmt>
+            <PrizesCard classname="prize-card" id="first">
+              <Img src={first} />
+              <PrizeAmt>Rs. 30,000</PrizeAmt>
             </PrizesCard>
           </Col>
           <Col md={4}>
-            <PrizesCard classname= "prize-card">
-                <Img
-                src={third}
-                />
-                <PrizeAmt>Rs. 10,000</PrizeAmt>
+            <PrizesCard classname="prize-card">
+              <Img src={third} />
+              <PrizeAmt>Rs. 10,000</PrizeAmt>
             </PrizesCard>
           </Col>
           <Col md={6}>
-            <PrizesCard classname= "prize-card">
-                <PrizeAmt>
-                    Rs. 5,000
-                </PrizeAmt>
-                <PrizeTitle>
-                    Best First Year Team
-                </PrizeTitle>
+            <PrizesCard classname="prize-card">
+              <PrizeAmt>Rs. 5,000</PrizeAmt>
+              <PrizeTitle>Best First Year Team</PrizeTitle>
             </PrizesCard>
           </Col>
           <Col md={6}>
-            <PrizesCard classname= "prize-card">
-                <PrizeAmt>
-                    Rs. 5,000
-                </PrizeAmt>
-                <PrizeTitle>
-                    Best All Girls Team 
-                </PrizeTitle>
+            <PrizesCard classname="prize-card">
+              <PrizeAmt>Rs. 5,000</PrizeAmt>
+              <PrizeTitle>Best All Girls Team</PrizeTitle>
             </PrizesCard>
           </Col>
         </Row>
@@ -157,67 +139,51 @@ function Prizes() {
             Sponsor Prizes
           </h2>
           <Col md={6}>
-            <PrizesCard classname= "prize-card">
-                <Img
+            <PrizesCard classname="prize-card">
+              <Img
                 src={polygon}
                 onClick={() => {
-                    window.location.href = "https://polygon.technology/";
+                  window.location.href = "https://polygon.technology/";
                 }}
-                />
-                <PrizeAmt>
-                    Rs. 15,000
-                </PrizeAmt>
-                <PrizeDesc>
-                    Prize for best hack built on Polygon
-                </PrizeDesc>
+              />
+              <PrizeAmt>Rs. 15,000</PrizeAmt>
+              <PrizeDesc>Prize for best hack built on Polygon</PrizeDesc>
             </PrizesCard>
           </Col>
           <Col md={6}>
-            <PrizesCard classname= "prize-card">
-                <Img
+            <PrizesCard classname="prize-card">
+              <Img
                 src={tezos}
                 onClick={() => {
-                    window.location.href = "https://devfolio.co";
+                  window.location.href = "https://devfolio.co";
                 }}
-                />
-                <PrizeAmt>
-                    Rs. 20,000
-                </PrizeAmt>
-                <PrizeDesc>
-                    Prize for best Dapp built on Tezos
-                </PrizeDesc>
+              />
+              <PrizeAmt>Rs. 20,000</PrizeAmt>
+              <PrizeDesc>Prize for best Dapp built on Tezos</PrizeDesc>
             </PrizesCard>
           </Col>
           <Col md={6}>
-            <PrizesCard classname= "prize-card">
-                <Img
+            <PrizesCard classname="prize-card">
+              <Img
                 src={celo}
                 onClick={() => {
-                    window.location.href = "https://polygon.technology/";
+                  window.location.href = "https://polygon.technology/";
                 }}
-                />
-                <PrizeAmt>
-                    Rs. 20,000
-                </PrizeAmt>
-                <PrizeDesc>
-                    Prize for best Dapp built on Celo
-                </PrizeDesc>
+              />
+              <PrizeAmt>Rs. 20,000</PrizeAmt>
+              <PrizeDesc>Prize for best Dapp built on Celo</PrizeDesc>
             </PrizesCard>
           </Col>
           <Col md={6}>
-            <PrizesCard classname= "prize-card">
-                <Img
+            <PrizesCard classname="prize-card">
+              <Img
                 src={filecoin}
                 onClick={() => {
-                    window.location.href = "https://polygon.technology/";
+                  window.location.href = "https://polygon.technology/";
                 }}
-                />
-                <PrizeAmt>
-                    Rs. 20,000
-                </PrizeAmt>
-                <PrizeDesc>
-                    Prize for best use of IPFS and/or Filecoin
-                </PrizeDesc>
+              />
+              <PrizeAmt>Rs. 20,000</PrizeAmt>
+              <PrizeDesc>Prize for best use of IPFS and/or Filecoin</PrizeDesc>
             </PrizesCard>
           </Col>
         </Row>
