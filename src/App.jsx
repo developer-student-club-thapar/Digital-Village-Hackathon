@@ -14,6 +14,7 @@ import Sidenav from "./Components/navbar/SideNav";
 
 import "./app.css";
 import Timeline from "./Components/Timeline/Timeline";
+import BackToTop from "./Components/BackToTop/BackToTop";
 
 const WrapperDiv = styled.div`
   display: flex;
@@ -36,6 +37,7 @@ function App() {
   return (
     <div className="App">
       <Sidenav />
+      <BackToTop/>
       <Landing />
       <WrapperDiv>
         <About />
