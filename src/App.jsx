@@ -13,6 +13,7 @@ import styled from "@emotion/styled";
 import Sidenav from "./Components/navbar/SideNav";
 
 import "./app.css";
+import Timeline from "./Components/Timeline/Timeline";
 
 const WrapperDiv = styled.div`
   display: flex;
@@ -41,6 +42,7 @@ function App() {
         {/* <Element /> */}
         <LogoSection />
         <Guidelines />
+        <Timeline />
       </WrapperDiv>
       <ProblemStatements />
       <SponsorsWrapperMain />
