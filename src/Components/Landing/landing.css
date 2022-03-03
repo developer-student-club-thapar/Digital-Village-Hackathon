@@ -227,3 +227,11 @@
   top: 37px;
   transform: rotate(-35deg) translateX(15px);
 }
+
+#image {
+  height: 10rem;
+  width: 10rem;
+  position: absolute;
+  top: 15.5vh;
+  right: 12vw;
+}

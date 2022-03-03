@@ -1,5 +1,6 @@
 import React from "react";
 import LogoNav from "../LogoNav/LogoNav";
+import prize from "./assets/prize.svg";
 import "./landing.css";
 
 const Landing = () => {
@@ -17,6 +18,7 @@ const Landing = () => {
     <div className="landing" id="home">
       <LogoNav />
       <div className="landing-content">
+        <img src={prize} id="image" alt="" />
         {/* <div className="ribbon ribbon-top-left">
           <span>
             Prices Worth <br /> 1.5 lac

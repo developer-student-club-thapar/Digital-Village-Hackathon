@@ -111,6 +111,9 @@ function SideNav() {
           <a href="#guidelines" onClick={closeNav}>
             Guidelines
           </a>
+          <a href="#timeline" onClick={closeNav}>
+            Timeline
+          </a>
           <a href="#problem" onClick={closeNav}>
             Problem Statements
           </a>
