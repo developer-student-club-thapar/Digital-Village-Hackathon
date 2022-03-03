@@ -229,9 +229,22 @@
 }
 
 #image {
-  height: 10rem;
+  height: 9rem;
   width: 10rem;
   position: absolute;
-  top: 15.5vh;
+  top: 16vh;
   right: 12vw;
 }
+
+@media (max-width: 1400px) {
+  #image {
+    top: 6vh;
+    right: 12vw;
+  }
+}
+/* @media (max-height: 1000px) {
+  #image {
+    top: 17.5vh;
+    right: 12vw;
+  }
+} */
