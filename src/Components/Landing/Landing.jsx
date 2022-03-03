@@ -1,6 +1,6 @@
 import React from "react";
 import LogoNav from "../LogoNav/LogoNav";
-import prize from "./assets/prize.svg";
+import prize from "./assets/prize.png";
 import "./landing.css";
 
 const Landing = () => {
