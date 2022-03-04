@@ -15,3 +15,9 @@
     transform: translateX(21vw);
   }
 }
+/* @media (max-width: 760px) {
+  .spHeading {
+    font-size: 40px !important;
+    transform: translateX(21vw);
+  }
+} */
