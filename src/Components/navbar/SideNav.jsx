@@ -75,7 +75,7 @@ function SideNav() {
   }, []);
 
   useEffect(() => {
-    console.log(showNav);
+    // console.log(showNav);
     if (showNav) {
       handleShowNav();
     } else {

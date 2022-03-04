@@ -242,9 +242,24 @@
     right: 12vw;
   }
 }
-/* @media (max-height: 1000px) {
+@media (max-width: 700px) {
+  .landing-content {
+    margin-top: 5rem;
+  }
   #image {
-    top: 17.5vh;
+    top: 13vh;
     right: 12vw;
   }
-} */
+}
+@media (max-width: 450px) {
+  .landing-content {
+    margin-top: 10rem;
+  }
+  .landing-content p {
+    padding: 0 1rem;
+  }
+  #image {
+    top: 16.5vh;
+    right: 12vw;
+  }
+}

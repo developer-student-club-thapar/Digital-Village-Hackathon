@@ -57,3 +57,18 @@
   font-size: 2rem;
   padding: 0 0 1rem 0;
 }
+
+@media (max-width: 768px) {
+  .menudiv a {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .menudiv h1 {
+    transform: translateX(0%);
+  }
+  .menudiv a {
+    font-size: 1rem;
+  }
+}
