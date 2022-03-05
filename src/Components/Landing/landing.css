@@ -82,100 +82,8 @@
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 1200px) {
-  .landing h1 {
-    font-size: 5.5rem;
-  }
-  .landing h4 {
-    font-size: 2rem;
-  }
 
-  /* .landing h1:nth-child(3) {
-    margin-top: 10rem;
-  } */
-
-  .landing .buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .landing .buttons button {
-    font-size: 1.5rem;
-    /* width: 100%; */
-  }
-}
-
-@media (max-width: 900px) {
-  .landing h1 {
-    font-size: 4.5rem;
-  }
-  .landing h4 {
-    font-size: 1.5rem;
-  }
-
-  /* .landing h1:nth-child(3) {
-    margin-top: 12rem;
-  } */
-
-  .landing .buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .landing .buttons button {
-    font-size: 1.5rem;
-    /* width: 100%; */
-  }
-}
-
-@media (max-width: 600px) {
-  .landing h1 {
-    font-size: 3rem;
-  }
-  /* .landing h1:nth-child(3) {
-    margin-top: 12rem;
-  } */
-  .landing h4 {
-    font-size: 1rem;
-  }
-  .landing .buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .landing .buttons button {
-    font-size: 1rem;
-    /* width: 100%; */
-  }
-}
-
-@media (max-width: 430px) {
-  .landing h1 {
-    font-size: 2rem;
-  }
-  /* .landing h1:nth-child(3) {
-    margin-top: 10rem;
-  } */
-  .landing h4 {
-    font-size: 0.9rem;
-  }
-  .landing .buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .landing .buttons button {
-    font-size: 0.7rem;
-    /* width: 100%; */
-  }
-}
 /* Ribbon css */
-
-@media (max-width: 1400px) {
-  .ribbon {
-    top: 6.8vh !important;
-  }
-}
 
 .ribbon {
   width: 260px;
@@ -236,30 +144,183 @@
   right: 12vw;
 }
 
+#image_800 {
+  display: none;
+}
+#image_350 {
+  display: none;
+}
+#image_mobile {
+  display: none;
+}
+
 @media (max-width: 1400px) {
+  .ribbon {
+    top: 6.8vh !important;
+  }
   #image {
     top: 6vh;
     right: 12vw;
   }
 }
+
+@media (max-width: 1200px) {
+  .landing h1 {
+    font-size: 5.5rem;
+  }
+  .landing h4 {
+    font-size: 2rem;
+  }
+
+  /* .landing h1:nth-child(3) {
+    margin-top: 10rem;
+  } */
+
+  .landing .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .landing .buttons button {
+    font-size: 1.5rem;
+    /* width: 100%; */
+  }
+}
+
+@media (max-width: 900px) {
+  .landing h1 {
+    font-size: 4.5rem;
+  }
+  .landing h4 {
+    font-size: 1.5rem;
+  }
+
+  /* .landing h1:nth-child(3) {
+    margin-top: 12rem;
+  } */
+
+  .landing .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .landing .buttons button {
+    font-size: 1.5rem;
+    /* width: 100%; */
+  }
+}
+
+@media (max-width: 800px) {
+  #image {
+    display: none;
+  }
+  #image_800 {
+    display: block;
+    position: absolute;
+    left: 76vw;
+    top: 6.8vh;
+  }
+  #image_mobile {
+    display: none;
+  }
+}
+
 @media (max-width: 700px) {
   .landing-content {
     margin-top: 5rem;
   }
-  #image {
-    top: 13vh;
-    right: 12vw;
+  #image_800 {
+    display: block;
+    position: absolute;
+    left: 76vw;
+    top: 13.5vh;
   }
 }
+
+@media (max-width: 650px) {
+  .landing p {
+    padding: 0% 10%;
+  }
+}
+
+@media (max-width: 600px) {
+  .landing h1 {
+    font-size: 3rem;
+  }
+  /* .landing h1:nth-child(3) {
+    margin-top: 12rem;
+  } */
+  .landing h4 {
+    font-size: 1rem;
+  }
+  .landing .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .landing .buttons button {
+    font-size: 1rem;
+    /* width: 100%; */
+  }
+
+  #image_800 {
+    left: 74vw;
+  }
+}
+
 @media (max-width: 450px) {
   .landing-content {
     margin-top: 10rem;
   }
   .landing-content p {
-    padding: 0 1rem;
+    padding: 0.5rem 1rem 1rem 1rem;
   }
-  #image {
-    top: 16.5vh;
-    right: 12vw;
+  #image_800 {
+    display: none;
+  }
+
+  #image_mobile {
+    display: block;
+    position: absolute;
+    left: 63vw;
+    top: 17.5vh;
+  }
+
+  .buttons {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 430px) {
+  .landing h1 {
+    font-size: 2rem;
+  }
+  /* .landing h1:nth-child(3) {
+    margin-top: 10rem;
+  } */
+  .landing h4 {
+    font-size: 0.9rem;
+  }
+  .landing .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .landing .buttons button {
+    font-size: 0.7rem;
+    /* width: 100%; */
+  }
+}
+
+@media (max-width: 350px) {
+  #image_mobile {
+    display: none;
+  }
+  #image_350 {
+    display: block;
+    position: absolute;
+    left: 65vw;
+    top: 17.5vh;
   }
 }

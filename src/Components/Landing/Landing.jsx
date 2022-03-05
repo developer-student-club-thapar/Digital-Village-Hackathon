@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import LogoNav from "../LogoNav/LogoNav";
 import prize from "./assets/prize.png";
+import prize_800 from "./assets/prize_800.png";
+import prize_350 from "./assets/prize_350.png";
+import prize_mobile from "./assets/prize_mobile.png";
 import "./landing.css";
 
 const Landing = () => {
-  React.useEffect(() => {
+  useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://apply.devfolio.co/v2/sdk.js";
     script.async = true;
@@ -14,11 +17,15 @@ const Landing = () => {
       document.body.removeChild(script);
     };
   }, []);
+
   return (
     <div className="landing" id="home">
       <LogoNav />
       <div className="landing-content">
         <img src={prize} id="image" alt="" />
+        <img src={prize_800} id="image_800" alt="" />
+        <img src={prize_mobile} id="image_mobile" alt="" />
+        <img src={prize_350} id="image_350" alt="" />
         {/* <div className="ribbon ribbon-top-left">
           <span>
             Prices Worth <br /> 1.5 lac

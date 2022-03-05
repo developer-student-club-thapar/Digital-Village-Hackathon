@@ -103,8 +103,14 @@ function SponsorsWrapperMain() {
       </SponsorHeading>
       <div className="sponsors-div">
         <Row>
-          <h2 className="spHeading main-heading" data-content="Title Sponsors">
+          <h2 className="subheading" id="desktop" data-content="Title Sponsors">
             Title Sponsors
+          </h2>
+          <h2 className="subheading" id="mobile" data-content="Title">
+            Title
+          </h2>
+          <h2 className="subheading mobile" id="mobile" data-content="Sponsors">
+            Sponsors
           </h2>
           <Col>
             <Img
@@ -124,8 +130,18 @@ function SponsorsWrapperMain() {
           </Col>
         </Row>
         <Row>
-          <h2 className="spHeading main-heading " data-content="Power Sponsors">
+          <h2
+            className="subheading desktop"
+            id="desktop"
+            data-content="Power Sponsors"
+          >
             Power Sponsors
+          </h2>
+          <h2 className="subheading" id="mobile" data-content="Power">
+            Power
+          </h2>
+          <h2 className="subheading" id="mobile" data-content="Sponsors">
+            Sponsors
           </h2>
           <Col>
             <Img
