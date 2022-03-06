@@ -8,6 +8,10 @@ import polygon from "../../images/polygon.png";
 import tezos from "../../images/tezos.png";
 import celo from "../../images/celo.png";
 import filecoin from "../../images/filecoin.png";
+import gmc from "../../images/gmc.png";
+import gdsc_bu from "../../images/gdsc_bu.png";
+import taskade from "../../images/taskade.png";
+import wb from "../../images/wb.png";
 import "./sponsors.css";
 
 const SponsorsWrapper = styled.div`
@@ -128,6 +132,14 @@ function SponsorsWrapperMain() {
               }}
             />
           </Col>
+          <Col>
+            <Img
+              src={wb}
+              onClick={() => {
+                window.location.href = "https://polygon.technology/";
+              }}
+            />
+          </Col>
         </Row>
         <Row>
           <h2
@@ -164,6 +176,58 @@ function SponsorsWrapperMain() {
               src={filecoin}
               onClick={() => {
                 window.location.href = "https://filecoin.io ";
+              }}
+            />
+          </Col>
+        </Row>
+        <Row>
+          <h2
+            className="subheading desktop"
+            id="desktop"
+            data-content="Associate Sponsors"
+          >
+            Associate Sponsors
+          </h2>
+          <h2 className="subheading" id="mobile" data-content="Associate">
+            Associate
+          </h2>
+          <h2 className="subheading" id="mobile" data-content="Sponsors">
+            Sponsors
+          </h2>
+          <Col>
+            <Img
+              src={gmc}
+              onClick={() => {
+                window.location.href = "https://tezos.com";
+              }}
+            />
+          </Col>
+          <Col>
+            <Img
+              src={taskade}
+              onClick={() => {
+                window.location.href = "https://celo.org ";
+              }}
+            />
+          </Col>
+        </Row>
+        <Row>
+          <h2
+            className="subheading desktop"
+            id="desktop"
+            data-content="Outreach"
+          >
+            Outreach
+          </h2>
+          <h2 className="subheading" id="mobile" data-content="Outreach">
+            Outreach
+          </h2>
+          <Col>
+            <Img
+              src={gdsc_bu}
+              height={200}
+              onClick={() => {
+                window.location.href = "https://tezos.com";
               }}
             />
           </Col>
