@@ -8,6 +8,8 @@ import filecoin from "../../images/filecoin.png";
 import first from "./assets/first.png";
 import second from "./assets/second.png";
 import third from "./assets/third.png";
+import FirstYear from "./assets/FirstYear.png";
+import women from "./assets/women.png";
 
 const PrizesWrapper = styled.div`
   background-color: black;
@@ -68,7 +70,6 @@ const PrizesCard = styled.div`
 `;
 
 const Img = styled.img`
-  cursor: pointer;
   width: 100px;
 `;
 
@@ -123,12 +124,14 @@ function Prizes() {
           </Col>
           <Col md={6}>
             <PrizesCard classname="prize-card">
+              <Img src={FirstYear} />
               <PrizeAmt>Rs. 5,000</PrizeAmt>
               <PrizeTitle>Best First Year Team</PrizeTitle>
             </PrizesCard>
           </Col>
           <Col md={6}>
             <PrizesCard classname="prize-card">
+              <Img src={women} />
               <PrizeAmt>Rs. 5,000</PrizeAmt>
               <PrizeTitle>Best All Girls Team</PrizeTitle>
             </PrizesCard>

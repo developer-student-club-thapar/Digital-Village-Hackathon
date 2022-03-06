@@ -32,21 +32,6 @@ const TitleDiv = styled.div`
   }
 `;
 
-// const Title = styled.h1`
-//   background-color: #282a31;
-//   padding: 2.5rem 5rem;
-//   color: #08bd04;
-//   font-size: 3rem;
-//   font-weight: bold;
-//   letter-spacing: 0.2rem;
-//   text-shadow: 2px 2px white;
-
-//   @media (max-width: 850px) {
-//     background-color: inherit;
-//     width: 100%;
-//   }
-// `;
-
 const SponsorSVG = styled.img`
   display: none;
   height: 350px;
@@ -116,28 +101,31 @@ function SponsorsWrapperMain() {
           <h2 className="subheading mobile" id="mobile" data-content="Sponsors">
             Sponsors
           </h2>
-          <Col>
+          <Col xs={12} sm={6} md={4}>
             <Img
               src={devfolio}
               onClick={() => {
                 window.location.href = "https://devfolio.co";
               }}
+              style={{ height: "100px", width: "400px" }}
             />
           </Col>
-          <Col>
+          <Col xs={12} sm={6} md={4}>
             <Img
               src={polygon}
               onClick={() => {
                 window.location.href = "https://polygon.technology/";
               }}
+              style={{ height: "100px", width: "400px" }}
             />
           </Col>
-          <Col>
+          <Col xs={12} sm={6} md={4}>
             <Img
               src={wb}
               onClick={() => {
-                window.location.href = "https://polygon.technology/";
+                window.location.href = "https://wandb.ai/site";
               }}
+              style={{ height: "100px", width: "400px" }}
             />
           </Col>
         </Row>
@@ -155,28 +143,31 @@ function SponsorsWrapperMain() {
           <h2 className="subheading" id="mobile" data-content="Sponsors">
             Sponsors
           </h2>
-          <Col>
+          <Col xs={12} sm={6} md={4}>
             <Img
               src={tezos}
               onClick={() => {
                 window.location.href = "https://tezos.com";
               }}
+              style={{ height: "100px", width: "250px" }}
             />
           </Col>
-          <Col>
+          <Col xs={12} sm={6} md={4}>
             <Img
               src={celo}
               onClick={() => {
                 window.location.href = "https://celo.org ";
               }}
+              style={{ height: "100px", width: "250px" }}
             />
           </Col>
-          <Col>
+          <Col xs={12} sm={6} md={4}>
             <Img
               src={filecoin}
               onClick={() => {
                 window.location.href = "https://filecoin.io ";
               }}
+              style={{ height: "100px", width: "250px" }}
             />
           </Col>
         </Row>
@@ -198,7 +189,12 @@ function SponsorsWrapperMain() {
             <Img
               src={gmc}
               onClick={() => {
-                window.location.href = "https://tezos.com";
+                window.location.href = "https://givemycertificate.com";
+              }}
+              style={{
+                height: "150px",
+                width: "450px",
+                transform: "scale(1.5)",
               }}
             />
           </Col>
@@ -206,8 +202,9 @@ function SponsorsWrapperMain() {
             <Img
               src={taskade}
               onClick={() => {
-                window.location.href = "https://celo.org ";
+                window.location.href = "https://www.taskade.com";
               }}
+              style={{ height: "150px", width: "450px" }}
             />
           </Col>
         </Row>
@@ -227,7 +224,12 @@ function SponsorsWrapperMain() {
               src={gdsc_bu}
               height={200}
               onClick={() => {
-                window.location.href = "https://tezos.com";
+                window.location.href =
+                  "https://gdsc.community.dev/bennett-university-greater-noida/";
+              }}
+              style={{
+                height: "250px",
+                width: "550px",
               }}
             />
           </Col>
