@@ -9,6 +9,7 @@ import ProblemStatements from "./Components/ProblemStatements/ProblemStatements"
 import SponsorsWrapperMain from "./Components/Sponsors/SponsorsWrapperMain";
 import Prizes from "./Components/Prizes/Prizes";
 import Footer from "./Components/Footer/Footer";
+import Loader from "./Components/Loader/Loader";
 import styled from "@emotion/styled";
 import Sidenav from "./Components/navbar/SideNav";
 
@@ -20,24 +21,13 @@ const WrapperDiv = styled.div`
   display: flex;
   flex-direction: column;
 `;
-const Element = styled.div`
-  position: absolute;
-  top: 1000px;
-  left: 60px;
-  height: 68vh;
-  width: 450px;
-  background-color: #282a31;
-  z-index: 2;
-  @media (max-width: 1400px) {
-    display: none;
-  }
-`;
 
 function App() {
   return (
     <div className="App">
+      <Loader />
       <Sidenav />
-      <BackToTop/>
+      <BackToTop />
       <Landing />
       <WrapperDiv>
         <About />

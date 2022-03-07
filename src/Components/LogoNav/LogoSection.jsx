@@ -20,6 +20,16 @@ const TitleDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 500px) {
+    h2 {
+      font-size: 3rem !important;
+    }
+  }
+  @media (max-width: 400px) {
+    h2 {
+      font-size: 2rem !important;
+    }
+  }
 `;
 
 const LogoDiv = styled.div`
@@ -63,7 +73,7 @@ const StyledImg4 = styled.img`
   top: 2px;
 `;
 const StyledImgDsc = styled.img`
-width: 100%;
+  width: 100%;
 `;
 function LogoSection() {
   return (
@@ -74,18 +84,27 @@ function LogoSection() {
         </h2>
       </TitleDiv>
 
-     <div className="collaborator-logo-div">
-      <Row>
-        <Col md={7}><img src={dsc}/></Col>
-        <Col md={5}><img src={tel}/></Col>
-      </Row>
-      <Row>
-        <Col md={4}><img src={meity}/></Col>
-        <Col md={4}><img src={step}/></Col>
-        <Col md={4}><img src={ti}/></Col>
-      </Row>
+      <div className="collaborator-logo-div">
+        <Row>
+          <Col md={7}>
+            <StyledImgDsc src={dsc} />
+          </Col>
+          <Col md={5}>
+            <StyledImg1 src={tel} />
+          </Col>
+        </Row>
+        <Row>
+          <Col md={4}>
+            <StyledImg2 src={meity} />
+          </Col>
+          <Col md={4}>
+            <StyledImg3 src={step} />
+          </Col>
+          <Col md={4}>
+            <StyledImg4 src={ti} />
+          </Col>
+        </Row>
       </div>
-
     </LogoSectionWrapper>
   );
 }
