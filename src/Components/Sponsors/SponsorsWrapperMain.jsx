@@ -2,7 +2,7 @@ import React from "react";
 import spn from "./img.png";
 import Sponsors from "../../data/sponsors.js";
 import styled from "@emotion/styled";
-import { Row, Col } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import devfolio from "../../images/devfolio.png";
 import polygon from "../../images/polygon.png";
 import tezos from "../../images/tezos.png";
@@ -75,6 +75,10 @@ const Img = styled.img`
   cursor: pointer;
 `;
 
+const Col = styled.div`
+  flex: 1 0 0%;
+`;
+
 function SponsorsWrapperMain() {
   return (
     <SponsorsWrapper id="sponsors">
@@ -95,37 +99,43 @@ function SponsorsWrapperMain() {
           <h2 className="subheading" id="desktop" data-content="Title Sponsors">
             Title Sponsors
           </h2>
-          <h2 className="subheading" id="mobile" data-content="Title">
-            Title
-          </h2>
-          <h2 className="subheading mobile" id="mobile" data-content="Sponsors">
-            Sponsors
-          </h2>
-          <Col xs={12} sm={6} md={4}>
+          <div className="mobile_heading_sponsor">
+            <h2 className="subheading" id="mobile" data-content="Title">
+              Title
+            </h2>
+            <h2
+              className="subheading mobile"
+              id="mobile"
+              data-content="Sponsors"
+            >
+              Sponsors
+            </h2>
+          </div>
+          <Col className="title_sponsors">
             <Img
+              id="img_devfolio"
               src={devfolio}
               onClick={() => {
                 window.location.href = "https://devfolio.co";
               }}
-              style={{ height: "100px", width: "400px" }}
             />
           </Col>
-          <Col xs={12} sm={6} md={4}>
+          <Col className="title_sponsors">
             <Img
+              id="img_polygon"
               src={polygon}
               onClick={() => {
                 window.location.href = "https://polygon.technology/";
               }}
-              style={{ height: "100px", width: "400px" }}
             />
           </Col>
-          <Col xs={12} sm={6} md={4}>
+          <Col className="title_sponsors">
             <Img
+              id="img_wb"
               src={wb}
               onClick={() => {
                 window.location.href = "https://wandb.ai/site";
               }}
-              style={{ height: "100px", width: "400px" }}
             />
           </Col>
         </Row>
@@ -137,37 +147,39 @@ function SponsorsWrapperMain() {
           >
             Power Sponsors
           </h2>
-          <h2 className="subheading" id="mobile" data-content="Power">
-            Power
-          </h2>
-          <h2 className="subheading" id="mobile" data-content="Sponsors">
-            Sponsors
-          </h2>
-          <Col xs={12} sm={6} md={4}>
+          <div className="mobile_heading_sponsor">
+            <h2 className="subheading" id="mobile" data-content="Power">
+              Power
+            </h2>
+            <h2 className="subheading" id="mobile" data-content="Sponsors">
+              Sponsors
+            </h2>
+          </div>
+          <Col className="power_sponsors">
             <Img
+              id="img_tezos"
               src={tezos}
               onClick={() => {
                 window.location.href = "https://tezos.com";
               }}
-              style={{ height: "100px", width: "250px" }}
             />
           </Col>
-          <Col xs={12} sm={6} md={4}>
+          <Col className="power_sponsors">
             <Img
+              id="img_celo"
               src={celo}
               onClick={() => {
                 window.location.href = "https://celo.org ";
               }}
-              style={{ height: "100px", width: "250px" }}
             />
           </Col>
-          <Col xs={12} sm={6} md={4}>
+          <Col className="power_sponsors">
             <Img
+              id="img_filecoin"
               src={filecoin}
               onClick={() => {
                 window.location.href = "https://filecoin.io ";
               }}
-              style={{ height: "100px", width: "250px" }}
             />
           </Col>
         </Row>
@@ -179,32 +191,30 @@ function SponsorsWrapperMain() {
           >
             Associate Sponsors
           </h2>
-          <h2 className="subheading" id="mobile" data-content="Associate">
-            Associate
-          </h2>
-          <h2 className="subheading" id="mobile" data-content="Sponsors">
-            Sponsors
-          </h2>
-          <Col>
+          <div className="mobile_heading_sponsor">
+            <h2 className="subheading" id="mobile" data-content="Associate">
+              Associate
+            </h2>
+            <h2 className="subheading" id="mobile" data-content="Sponsors">
+              Sponsors
+            </h2>
+          </div>
+          <Col className="associate_sponsors">
             <Img
+              id="img_gmc"
               src={gmc}
               onClick={() => {
                 window.location.href = "https://givemycertificate.com";
               }}
-              style={{
-                height: "150px",
-                width: "450px",
-                transform: "scale(1.5)",
-              }}
             />
           </Col>
-          <Col>
+          <Col className="associate_sponsors">
             <Img
+              id="img_taskade"
               src={taskade}
               onClick={() => {
                 window.location.href = "https://www.taskade.com";
               }}
-              style={{ height: "150px", width: "450px" }}
             />
           </Col>
         </Row>
@@ -216,20 +226,18 @@ function SponsorsWrapperMain() {
           >
             Outreach
           </h2>
-          <h2 className="subheading" id="mobile" data-content="Outreach">
-            Outreach
-          </h2>
+          <div className="mobile_heading_sponsor">
+            <h2 className="subheading" id="mobile" data-content="Outreach">
+              Outreach
+            </h2>
+          </div>
           <Col>
             <Img
+              id="img_gdsc_bu"
               src={gdsc_bu}
-              height={200}
               onClick={() => {
                 window.location.href =
                   "https://gdsc.community.dev/bennett-university-greater-noida/";
-              }}
-              style={{
-                height: "250px",
-                width: "550px",
               }}
             />
           </Col>
