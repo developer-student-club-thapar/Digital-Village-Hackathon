@@ -17,52 +17,84 @@ export default function Guidelines() {
           <ul>
             <li>
               <p>
-                The hackathon is going to be conducted online and offline mode
-                is open to students of Thapar Institute of Engineering and
-                Technology, Patiala; Tel Aviv University, Tel Aviv, Israel and
-                Universities/Colleges across the globe.
+                The hackathon is going to be conducted in hybrid mode (both
+                online and offline) is open to Universities/Colleges across the
+                globe. Students of Thapar Institute of Engineering and
+                Technology are only eligible for offline hack.
+              </p>
+            </li>
+            <li>
+              <p>It is a 24 hour hackathon.</p>
+            </li>
+            <li>
+              <p>
+                Refreshments/meals should be provided to all the offline
+                participants.
+              </p>
+            </li>
+            <li>
+              <p>Online registrations are active till 17th March</p>
+            </li>
+            <li>
+              <p>
+                Teams interested to be a part of the offline hack must have to
+                complete their Devfolio registrations latest by 15th March along
+                with the Offline registrations procedure which will begin
+                shortly.
               </p>
             </li>
             <li>
               <p>
-                Each team leader needs to register using his/her email id on the
-                platform by 15th March 2022.
+                It is an open for all hackathon, teams can be formed from
+                different colleges as well but for experiencing the offline
+                hack, it is mandatory that all members of the team are from TIET
+                only.
               </p>
             </li>
             <li>
               <p>
-                Duration of the hackathon is 19th March 2022, 9 a.m. to 20th
-                March 2022, 9 a.m.
+                Duration of the hackathon is from 19th March 2022, 2 p.m. IST to
+                20th March 2022, 2 p.m. IST
               </p>
             </li>
             <li>
-              <p>Team size- 1 to 4 members.</p>
+              <p>Team size can vary between 1 to 4 members.</p>
             </li>
             <li>
               <p>Submission date of solutions- 20th March 2022.</p>
             </li>
             <li>
-              <p>Each team needs to select at least one problem statement.</p>
+              <p>
+                Each team needs to select at least one problem statement. The
+                last problem statement involves Open Innovation in Agriculture!
+              </p>
             </li>
             <li>
               <p>There is no registration fee.</p>
             </li>
             <li>
               <p>
-                The submitted solution needs to be in the form of a zip file
-                containing a code file and a corresponding write up (text file)
-                explaining the solution, technology used,
-                methodology/architecture used and anything that seems necessary
-                to the team.{" "}
-              </p>
-            </li>
-            <li>
-              <p>
-                Winning teams of each problem statement category will be awarded
-                a prize money of Rs. 10,000.
+                All participants are requested to join Google developers Student
+                Club's Discord Server since all the important information will
+                be shared there. Join our{" "}
+                <span
+                  style={{
+                    textDecoration: "underline",
+                    color: "rgb(8, 189, 4)",
+                    // "& :hover": {
+                    // },
+                  }}
+                >
+                  <a href="https://discord.gg/E9ZRENb">discord</a>
+                </span>
+                .
               </p>
             </li>
           </ul>
+          <span style={{ margin: "0 1rem" }}>
+            Please note:{"  "} Offline Registrations will begin soon, stay tuned
+            to our social media handles for further notifications.
+          </span>
         </div>
       </div>
     </div>
