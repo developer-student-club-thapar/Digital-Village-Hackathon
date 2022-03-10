@@ -159,7 +159,7 @@
 }
 @media (max-width: 850px) {
   .subheading {
-    font-size: 40px !important;
+    font-size: 38px !important;
     transform: translateX(21vw);
   }
 }
@@ -175,7 +175,7 @@
 }
 @media (max-width: 650px) {
   .subheading {
-    transform: translateX(16%);
+    transform: translateX(10%);
   }
 }
 @media (max-width: 500px) {
@@ -199,7 +199,7 @@
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 450px) {
   #desktop {
     display: none !important;
   }
