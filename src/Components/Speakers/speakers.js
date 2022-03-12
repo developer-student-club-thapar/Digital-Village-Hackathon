@@ -1,6 +1,7 @@
 import shubh from "./pictures/shubh.jpg";
 import rahul from "./pictures/rahul.jpeg";
 import jay from "./pictures/jay.jpeg";
+import tanu from "./pictures/tanu.jpeg";
 
 export default [
   {
@@ -21,12 +22,12 @@ export default [
     des: "SDE Intern Apple | Ex-Fountane | SIH Finalist | Ex-GDSC Co-Lead | Worked as a Full Stack Dev for Patiala Government",
     img: jay,
   },
-  // {
-  //   key: 4,
-  //   name: "Sai Siddartha Maram",
-  //   des: "Incoming UX Research Intern @Meta",
-  //   img: sai,
-  // },
+  {
+    key: 4,
+    name: "Dr. Tanu Wadhera",
+    des: "ML, AI, signal processing, computational modeling.",
+    img: tanu,
+  },
   // {
   //   key: 5,
   //   name: "Shubhank Saxena",
