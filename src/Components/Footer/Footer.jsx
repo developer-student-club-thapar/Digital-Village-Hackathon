@@ -14,13 +14,18 @@ const FooterWrapper = styled.div`
   justify-content: space-between;
   @media (max-width: 1400px) {
     justify-content: center;
+    margin: 0 auto;
   }
 `;
 const Title = styled.h1`
   text-align: center;
 `;
 
-const IconsDiv = styled.div``;
+const IconsDiv = styled.div`
+  @media (max-width: 1400px) {
+    width: 100%;
+  }
+`;
 
 const Icon = styled.img`
   padding: 1rem;
