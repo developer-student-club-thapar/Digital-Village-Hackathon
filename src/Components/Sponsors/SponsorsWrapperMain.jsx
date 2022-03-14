@@ -11,6 +11,8 @@ import filecoin from "../../images/filecoin.png";
 import gmc from "../../images/gmc.png";
 import gdsc_bu from "../../images/gdsc_bu.png";
 import taskade from "../../images/taskade.png";
+import bal from "../../images/bal.png";
+import hhe from "../../images/hhe.png";
 import wb from "../../images/wb.png";
 import "./sponsors.css";
 
@@ -214,6 +216,24 @@ function SponsorsWrapperMain() {
               src={taskade}
               onClick={() => {
                 window.location.href = "https://www.taskade.com";
+              }}
+            />
+          </Col>
+          <Col className="associate_sponsors">
+            <Img
+              id="img_hhe"
+              src={hhe}
+              onClick={() => {
+                window.location.href = "https://www.henryharvin.com";
+              }}
+            />
+          </Col>
+          <Col className="associate_sponsors">
+            <Img
+              id="img_bal"
+              src={bal}
+              onClick={() => {
+                window.location.href = "https://balsamiq.com";
               }}
             />
           </Col>

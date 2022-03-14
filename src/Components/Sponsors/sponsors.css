@@ -64,6 +64,16 @@
   height: 250px;
   width: 550px;
 }
+#img_bal {
+  height: 350px;
+  width: 550px;
+  transform: translateY(25px);
+}
+#img_hhe {
+  height: 300px;
+  width: 300px;
+  margin: 0 10vw;
+}
 
 @media (max-width: 1500px) {
   #img_devfolio {
@@ -89,6 +99,15 @@
   #img_taskade {
     height: 150px;
     width: 390px;
+  }
+  #img_bal {
+    height: 250px;
+    width: 300px;
+  }
+  #img_hhe {
+    height: 200px;
+    width: 200px;
+    margin: 0;
   }
 }
 
@@ -176,6 +195,14 @@
 @media (max-width: 650px) {
   .subheading {
     transform: translateX(10%);
+  }
+  #img_bal {
+    height: 150px;
+    width: 200px;
+  }
+  #img_hhe {
+    height: 160px;
+    width: 160px;
   }
 }
 @media (max-width: 500px) {
