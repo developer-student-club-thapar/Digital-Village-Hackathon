@@ -61,7 +61,7 @@ function Footer() {
             <Icon src={linkedin} height={63} />
           </a>
           <a
-            href="https://discord.gg/G4VvVUvb"
+            href="https://discord.gg/W9d3kEV2"
             target="_blank"
             rel="noreferrer"
           >

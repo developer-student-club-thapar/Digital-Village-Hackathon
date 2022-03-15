@@ -1,6 +1,7 @@
 import shubh from "./pictures/shubh.jpg";
 import rahul from "./pictures/rahul.jpeg";
 import jay from "./pictures/jay.jpeg";
+import sonu from "./pictures/sonu.jpeg";
 import tanu from "./pictures/tanu.jpeg";
 
 export default [
@@ -28,12 +29,12 @@ export default [
     des: "ML, AI, signal processing, computational modeling.",
     img: tanu,
   },
-  // {
-  //   key: 5,
-  //   name: "Shubhank Saxena",
-  //   des: "Backend@Wall | GSoC'21 | LFX Mentee'21 | KERNEL Fellow | xHabbit xLimeHealth| Former Research Intern @IIT Delhi,@IIIT Allahabad | MLH Fellow",
-  //   img: shubh,
-  // },
+  {
+    key: 5,
+    name: "Dr. Sonu Lamba",
+    des: "Machine Learning n Pattern Recognition n Image Processing",
+    img: sonu,
+  },
   // {
   //   key: 6,
   //   name: "Sai Siddartha Maram",
