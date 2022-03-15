@@ -32,7 +32,7 @@ export default [
   {
     key: 5,
     name: "Dr. Sonu Lamba",
-    des: "Machine Learning n Pattern Recognition n Image Processing",
+    des: "Machine Learning | Pattern Recognition | Image Processing",
     img: sonu,
   },
   // {
