@@ -3,6 +3,7 @@ import rahul from "./pictures/rahul.jpeg";
 import jay from "./pictures/jay.jpeg";
 import sonu from "./pictures/sonu.jpeg";
 import tanu from "./pictures/tanu.jpeg";
+import amr from "./pictures/amr.jpeg";
 
 export default [
   {
@@ -35,10 +36,10 @@ export default [
     des: "Machine Learning | Pattern Recognition | Image Processing",
     img: sonu,
   },
-  // {
-  //   key: 6,
-  //   name: "Sai Siddartha Maram",
-  //   des: "Incoming UX Research Intern @Meta",
-  //   img: sai,
-  // },
+  {
+    key: 6,
+    name: "Dr Amrita Kaur",
+    des: "Specialization: Deep Learning",
+    img: amr,
+  },
 ];
