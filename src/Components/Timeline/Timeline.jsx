@@ -161,29 +161,6 @@ const TimelineDiv = () => {
         <TimelineItem>
           <TimelineOppositeContent
             sx={{ m: "auto 0" }}
-            align="right"
-            variant="body2"
-            color="rgba(8, 189, 4, 1)"
-          >
-            6:00 am
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineConnector />
-            <TimelineDot color="warning" variant="outlined">
-              <QuizIcon />
-            </TimelineDot>
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent sx={{ py: "12px", px: 2 }}>
-            <Typography variant="h6" component="span">
-              Checkpoint 2
-            </Typography>
-            <Typography>Another Evaluation</Typography>
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineOppositeContent
-            sx={{ m: "auto 0" }}
             variant="body2"
             color="rgba(8, 189, 4, 1)"
           >
@@ -203,7 +180,29 @@ const TimelineDiv = () => {
             <Typography>Because you need strength</Typography>
           </TimelineContent>
         </TimelineItem>
-
+        <TimelineItem>
+          <TimelineOppositeContent
+            sx={{ m: "auto 0" }}
+            align="right"
+            variant="body2"
+            color="rgba(8, 189, 4, 1)"
+          >
+            10:00 am
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineConnector />
+            <TimelineDot color="warning" variant="outlined">
+              <QuizIcon />
+            </TimelineDot>
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent sx={{ py: "12px", px: 2 }}>
+            <Typography variant="h6" component="span">
+              Checkpoint 2
+            </Typography>
+            <Typography>Another Evaluation</Typography>
+          </TimelineContent>
+        </TimelineItem>
         <TimelineItem>
           <TimelineOppositeContent
             sx={{ m: "auto 0" }}
